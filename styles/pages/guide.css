@@ -1,0 +1,1025 @@
+html {
+  min-height: 100%;
+}
+
+body.guide-page {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--theme-text-main);
+  font-family: var(--theme-font-body);
+  line-height: 1.5;
+  background:
+    radial-gradient(circle at 18% 14%, var(--theme-glow-secondary), transparent 24%),
+    radial-gradient(circle at 82% 18%, var(--theme-glow-tertiary), transparent 26%),
+    linear-gradient(180deg, var(--theme-bg-alt), var(--theme-bg-main));
+  overflow-x: hidden;
+}
+
+body.guide-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.01) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
+  background-size: 32px 32px;
+  opacity: 0.68;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.82), transparent 92%);
+}
+
+body.guide-page::after {
+  content: "";
+  position: fixed;
+  inset: -14%;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 22% 18%, var(--theme-glow-primary), transparent 26%),
+    radial-gradient(circle at 76% 18%, var(--theme-glow-secondary), transparent 24%),
+    radial-gradient(circle at 56% 72%, var(--theme-glow-tertiary), transparent 28%);
+  filter: blur(22px);
+}
+
+.guide-video {
+  position: fixed;
+  inset: 0;
+  z-index: -3;
+  overflow: hidden;
+}
+
+.guide-video iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100vw * var(--theme-video-bleed));
+  height: calc(56.25vw * var(--theme-video-bleed));
+  min-width: calc(177.78vh * var(--theme-video-bleed));
+  min-height: calc(100vh * var(--theme-video-bleed));
+  transform: translate(-50%, -50%);
+  border: 0;
+  pointer-events: none;
+  opacity: 0.8;
+  filter: saturate(1.12) contrast(1.06) brightness(0.86);
+}
+
+.guide-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0) 36%),
+    linear-gradient(180deg, rgba(7, 12, 24, 0.18), rgba(7, 12, 24, 0.82));
+}
+
+.guide-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid var(--theme-border-soft);
+  background: linear-gradient(180deg, rgba(7, 12, 24, 0.78), rgba(7, 12, 24, 0.36));
+  backdrop-filter: blur(16px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.guide-topbar__logo {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.guide-topbar__inner,
+.guide-shell {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.guide-topbar__inner {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.guide-topbar__core {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding-left: 72px;
+}
+
+.guide-back,
+.section-link,
+.tab-button,
+.mini-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 15px;
+  border: 1px solid var(--theme-border-soft);
+  border-radius: 999px;
+  color: var(--theme-text-main);
+  font: inherit;
+  text-decoration: none;
+  background: var(--theme-button-secondary-bg);
+  transition:
+    transform 300ms ease,
+    border-color 300ms ease,
+    box-shadow 300ms ease,
+    background-color 300ms ease,
+    color 300ms ease;
+}
+
+.guide-back:hover,
+.guide-back:focus-visible,
+.section-link:hover,
+.section-link:focus-visible,
+.tab-button:hover,
+.tab-button:focus-visible {
+  transform: translateY(-1px);
+  border-color: var(--theme-border-strong);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.16);
+}
+
+.guide-meta {
+  display: grid;
+  justify-items: end;
+  gap: 4px;
+}
+
+.guide-meta strong {
+  font-size: 1rem;
+}
+
+.guide-meta span {
+  color: var(--theme-text-muted);
+  font-size: 0.82rem;
+}
+
+.guide-shell {
+  position: relative;
+  padding: 26px 0 56px;
+}
+
+.guide-shell::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: min(560px, 72vw);
+  height: 220px;
+  transform: translateX(-50%);
+  border-radius: 999px;
+  background: radial-gradient(circle, var(--theme-glow-primary), transparent 72%);
+  filter: blur(18px);
+  opacity: 0.72;
+  pointer-events: none;
+}
+
+.guide-hero,
+.guide-section,
+.section-nav {
+  border: 1px solid var(--theme-border-soft);
+  border-radius: 18px;
+  background:
+    linear-gradient(180deg, var(--theme-card-highlight), rgba(255, 255, 255, 0.02)),
+    rgba(10, 15, 28, 0.6);
+  box-shadow:
+    var(--theme-shadow),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  transition:
+    transform var(--ui-transition-smooth),
+    border-color var(--ui-transition-smooth),
+    box-shadow var(--ui-transition-smooth);
+}
+
+.guide-hero::after,
+.guide-section::after,
+.section-nav::after {
+  display: none;
+}
+
+.guide-hero:hover,
+.guide-section:hover,
+.section-nav:hover {
+  transform: none;
+  border-color: var(--theme-border-soft);
+  box-shadow:
+    var(--theme-shadow),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.guide-hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(320px, 0.92fr) minmax(0, 1.08fr);
+  gap: 24px;
+  padding: 24px;
+  border-color: color-mix(in srgb, var(--theme-border-soft) 42%, transparent);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--theme-card-highlight) 72%, transparent), rgba(255, 255, 255, 0.016)),
+    color-mix(in srgb, var(--theme-surface) 88%, transparent);
+  box-shadow: 0 22px 54px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(12px);
+  overflow: hidden;
+  animation: guide-fade-up 460ms cubic-bezier(.22, 1, .36, 1) both;
+}
+
+.guide-hero::before,
+.guide-panel::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, var(--theme-glow-primary), transparent 72%);
+}
+
+.guide-hero::before {
+  inset: auto -90px -140px auto;
+  width: 280px;
+  height: 280px;
+}
+
+.guide-panel {
+  display: none;
+  position: relative;
+  margin-top: 0;
+}
+
+.guide-panel::before {
+  inset: auto auto -130px -80px;
+  width: 260px;
+  height: 260px;
+  opacity: 0.82;
+}
+
+.guide-panel.is-active {
+  display: block;
+  animation: guide-panel-in 320ms cubic-bezier(.2, .7, .2, 1);
+}
+
+.guide-hero__media {
+  position: relative;
+  min-height: 360px;
+  overflow: hidden;
+  border-radius: 12px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0)),
+    var(--theme-surface-soft);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.guide-hero__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(7, 12, 24, 0.06), rgba(7, 12, 24, 0.32)),
+    radial-gradient(circle at 70% 14%, var(--theme-glow-primary), transparent 30%);
+  pointer-events: none;
+}
+
+.guide-hero__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.02);
+  animation: hero-float 14s ease-in-out infinite alternate;
+  transition: transform 480ms ease;
+  -webkit-mask-image: linear-gradient(to bottom, #000 80%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 80%, transparent 100%);
+}
+
+.guide-hero:hover .guide-hero__media img {
+  transform: scale(1.02);
+}
+
+.guide-hero__content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  align-content: start;
+  gap: 18px;
+}
+
+.hero-eyebrow,
+.section-eyebrow {
+  color: var(--theme-accent);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  opacity: 0.72;
+  text-transform: uppercase;
+}
+
+.guide-hero h1,
+.guide-section h2,
+.overview-lead,
+.summary-tagline,
+.info-card h3,
+.weapon-card h3,
+.echo-card h3,
+.echo-item h4,
+.stat-card h4 {
+  font-family: var(--theme-font-display);
+}
+
+.guide-hero h1,
+.guide-section h2 {
+  margin: 0;
+  line-height: 1.08;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.guide-hero h1 {
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  text-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.28),
+    0 0 30px color-mix(in srgb, var(--theme-accent) 30%, transparent);
+}
+
+.guide-section h2 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  text-shadow: 0 0 30px color-mix(in srgb, var(--theme-accent) 18%, transparent);
+}
+
+.hero-tagline,
+.section-caption,
+.inline-note,
+.metric-card p,
+.weapon-card__body p,
+.info-card p,
+.echo-card__title p,
+.echo-item p,
+.empty-guide p,
+.stacked-copy p,
+.summary-tagline {
+  color: var(--theme-text-muted);
+  line-height: 1.72;
+}
+
+.hero-badges {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.hero-badge,
+.info-card,
+.metric-card,
+.weapon-card,
+.echo-card,
+.stat-card,
+.kit-card,
+.empty-guide {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--theme-border-soft);
+  border-radius: 12px;
+  background:
+    linear-gradient(180deg, var(--theme-card-highlight), rgba(255, 255, 255, 0.02)),
+    rgba(10, 15, 28, 0.6);
+  backdrop-filter: blur(12px);
+  transition:
+    transform 300ms ease,
+    border-color 300ms ease,
+    box-shadow 300ms ease;
+}
+
+.hero-badge::before,
+.info-card::before,
+.metric-card::before,
+.weapon-card::before,
+.echo-card::before,
+.stat-card::before,
+.kit-card::before,
+.empty-guide::before {
+  content: "";
+  position: absolute;
+  inset: 0 10% auto;
+  height: 76px;
+  background: var(--ui-card-top-glow);
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.hero-badge:hover,
+.info-card:hover,
+.metric-card:hover,
+.weapon-card:hover,
+.echo-card:hover,
+.stat-card:hover,
+.kit-card:hover {
+  transform: translateY(-2px) scale(1.01);
+  border-color: var(--theme-border-strong);
+  box-shadow:
+    0 18px 34px rgba(0, 0, 0, 0.18),
+    var(--ui-hover-glow);
+}
+
+.hero-badge,
+.info-card,
+.metric-card,
+.stat-card,
+.kit-card,
+.empty-guide {
+  padding: 18px;
+}
+
+.hero-badge__label,
+.metric-card span {
+  display: block;
+  color: var(--theme-text-muted);
+  font-size: 0.8rem;
+  opacity: 0.68;
+}
+
+.hero-badge__label {
+  margin-bottom: 8px;
+}
+
+.hero-badge strong {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-badge img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-accent) 30%, transparent);
+  transition: transform 250ms ease, box-shadow 250ms ease;
+}
+
+.hero-badge:hover img,
+.hero-badge:focus-within img {
+  transform: translateY(-1px) scale(1.08);
+  box-shadow:
+    0 0 0 2px color-mix(in srgb, var(--theme-accent) 36%, transparent),
+    0 10px 24px rgba(0, 0, 0, 0.16);
+}
+
+.hero-highlight-list,
+.bullet-list,
+.rank-list,
+.rotation-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.hero-highlight-list li,
+.bullet-list li,
+.rank-list li,
+.rotation-list li {
+  line-height: 1.66;
+}
+
+.hero-highlight-list li::marker,
+.bullet-list li::marker,
+.rank-list li::marker,
+.rotation-list li::marker {
+  color: var(--theme-accent);
+}
+
+.bullet-list--tight li + li,
+.rank-list li + li {
+  margin-top: 8px;
+}
+
+.section-nav {
+  position: sticky;
+  top: 82px;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0;
+  padding: 14px;
+  animation: guide-fade-up 500ms cubic-bezier(.22, 1, .36, 1) both;
+}
+
+.section-nav:empty {
+  display: none;
+}
+
+.section-link,
+.tab-button,
+.mini-chip {
+  min-height: 38px;
+  padding: 0 14px;
+}
+
+.section-link {
+  cursor: pointer;
+}
+
+.section-link.is-active,
+.tab-button.is-active {
+  border-color: var(--theme-border-strong);
+  background: var(--theme-button-primary-bg);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.04),
+    0 12px 26px rgba(0, 0, 0, 0.16);
+}
+
+.guide-stage {
+  position: relative;
+  min-height: 560px;
+}
+
+.guide-section {
+  margin-top: 18px;
+  padding: 24px;
+  animation: guide-fade-up 560ms cubic-bezier(.22, 1, .36, 1) both;
+}
+
+.guide-section__head {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.overview-layout,
+.tabs-block,
+.echoes-column,
+.kit-sidebar {
+  display: grid;
+  gap: 16px;
+}
+
+.overview-story {
+  padding: 22px 24px;
+  border: 1px solid var(--theme-border-soft);
+  border-radius: 24px;
+  background:
+    linear-gradient(180deg, var(--theme-card-highlight), rgba(255, 255, 255, 0.02)),
+    var(--theme-surface-soft);
+}
+
+.overview-lead {
+  margin: 0 0 16px;
+  color: var(--theme-text-main);
+  font-size: clamp(1.45rem, 2vw, 2rem);
+  line-height: 1.15;
+}
+
+.priority-layout,
+.kit-layout {
+  display: grid;
+  gap: 18px;
+  align-items: start;
+}
+
+.priority-layout {
+  grid-template-columns: minmax(0, 1.3fr) 280px;
+}
+
+.kit-layout {
+  grid-template-columns: minmax(0, 1.24fr) 320px;
+}
+
+.priority-side {
+  position: relative;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.priority-glow {
+  position: absolute;
+  inset: auto -24px -36px auto;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--theme-glow-primary), transparent 72%);
+  pointer-events: none;
+}
+
+.tab-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tab-button {
+  cursor: pointer;
+}
+
+.tab-panel {
+  display: none;
+  padding: 20px;
+  border: 1px solid var(--theme-border-soft);
+  border-radius: 12px;
+  background:
+    linear-gradient(180deg, var(--theme-card-highlight), rgba(255, 255, 255, 0.02)),
+    rgba(10, 15, 28, 0.6);
+  backdrop-filter: blur(12px);
+}
+
+.tab-panel.is-active {
+  display: block;
+}
+
+.split-grid,
+.kit-grid,
+.metric-grid,
+.proscons-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.split-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.kit-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.metric-grid {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.proscons-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.stacked-copy {
+  display: grid;
+  gap: 12px;
+}
+
+.guide-subsection,
+.stack-section,
+.weapon-spotlight,
+.weapon-list,
+.endgame-grid {
+  margin-top: 18px;
+}
+
+.guide-subsection h3,
+.summary-hero h3,
+.info-card h3,
+.weapon-card h3,
+.echo-card h3,
+.echo-item h4,
+.stat-card h4 {
+  margin: 0 0 10px;
+  font-size: 1.08rem;
+  letter-spacing: 0.02em;
+}
+
+.metric-card strong {
+  display: block;
+  margin: 10px 0 8px;
+  font-size: 1.9rem;
+  line-height: 1;
+}
+
+.info-card--success {
+  border-color: color-mix(in srgb, var(--theme-success) 34%, transparent);
+}
+
+.info-card--danger {
+  border-color: color-mix(in srgb, var(--theme-danger) 34%, transparent);
+}
+
+.kit-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.kit-card img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.rotation-list li {
+  display: grid;
+  gap: 6px;
+}
+
+.rotation-list li + li {
+  margin-top: 12px;
+}
+
+.rotation-list strong {
+  color: var(--theme-text-main);
+}
+
+.weapon-list {
+  display: grid;
+  gap: 16px;
+}
+
+.weapon-card {
+  --weapon-rarity-accent: var(--theme-accent);
+  --weapon-rarity-accent-strong: var(--theme-accent-strong);
+  --weapon-rarity-soft: rgba(121, 221, 255, 0.12);
+  --weapon-rarity-border: rgba(121, 221, 255, 0.18);
+  --weapon-rarity-glow: rgba(121, 221, 255, 0.16);
+  display: grid;
+  grid-template-columns: 164px minmax(0, 1fr);
+  gap: 18px;
+  padding: 18px;
+  border-color: var(--weapon-rarity-border);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--weapon-rarity-soft) 22%, var(--theme-card-highlight)), rgba(255, 255, 255, 0.02)),
+    var(--theme-surface-strong);
+}
+
+.weapon-card[data-weapon-rarity="5"] {
+  --weapon-rarity-accent: #f1d05f;
+  --weapon-rarity-accent-strong: #ffe79a;
+  --weapon-rarity-soft: rgba(241, 208, 95, 0.16);
+  --weapon-rarity-border: rgba(241, 208, 95, 0.24);
+  --weapon-rarity-glow: rgba(241, 208, 95, 0.18);
+}
+
+.weapon-card[data-weapon-rarity="4"] {
+  --weapon-rarity-accent: #9c78ff;
+  --weapon-rarity-accent-strong: #c4a9ff;
+  --weapon-rarity-soft: rgba(156, 120, 255, 0.16);
+  --weapon-rarity-border: rgba(156, 120, 255, 0.24);
+  --weapon-rarity-glow: rgba(156, 120, 255, 0.18);
+}
+
+.weapon-card[data-weapon-rarity="3"] {
+  --weapon-rarity-accent: #64b8ff;
+  --weapon-rarity-accent-strong: #9fd4ff;
+  --weapon-rarity-soft: rgba(100, 184, 255, 0.16);
+  --weapon-rarity-border: rgba(100, 184, 255, 0.24);
+  --weapon-rarity-glow: rgba(100, 184, 255, 0.18);
+}
+
+.weapon-card--featured {
+  grid-template-columns: 220px minmax(0, 1fr);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--weapon-rarity-soft) 34%, var(--theme-card-highlight)), rgba(255, 255, 255, 0.02)),
+    var(--theme-surface-strong);
+}
+
+.weapon-card__media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 160px;
+  padding: 14px;
+  border-radius: 12px;
+  background:
+    radial-gradient(circle at 20% 18%, var(--weapon-rarity-soft), transparent 38%),
+    linear-gradient(180deg, color-mix(in srgb, var(--weapon-rarity-soft) 26%, var(--theme-card-highlight)), rgba(255, 255, 255, 0.02)),
+    var(--theme-surface-soft);
+  box-shadow:
+    inset 0 0 0 1px var(--weapon-rarity-border),
+    0 0 0 1px rgba(255, 255, 255, 0.03);
+}
+
+.weapon-card--featured .weapon-card__media {
+  min-height: 220px;
+}
+
+.weapon-card__media img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transform: translateY(0) scale(1);
+  transition: transform 250ms ease;
+}
+
+.weapon-card:hover .weapon-card__media img,
+.weapon-card:focus-within .weapon-card__media img {
+  transform: translateY(-2px) scale(1.04);
+}
+
+.weapon-card__body {
+  display: grid;
+  gap: 12px;
+}
+
+.weapon-card__head h3 {
+  color: color-mix(in srgb, var(--weapon-rarity-accent-strong) 72%, var(--theme-text-main));
+}
+
+.weapon-card__head > strong {
+  color: var(--weapon-rarity-accent-strong);
+  text-shadow: 0 0 18px var(--weapon-rarity-glow);
+}
+
+.weapon-card__head {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.mini-chip,
+.section-link,
+.tab-button,
+.guide-back {
+  border-color: var(--theme-border-soft);
+}
+
+.mini-chip {
+  min-height: 32px;
+  font-size: 0.78rem;
+  background: var(--theme-chip-bg);
+}
+
+.score-bar {
+  overflow: hidden;
+  height: 8px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--weapon-rarity-soft) 30%, rgba(255, 255, 255, 0.08));
+}
+
+.score-bar span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(135deg, var(--weapon-rarity-accent), var(--weapon-rarity-accent-strong));
+  box-shadow: 0 0 18px var(--weapon-rarity-glow);
+}
+
+.echoes-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.echo-card {
+  padding: 18px;
+}
+
+.echo-card__head {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.echo-card__title {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+}
+
+.echo-card__title img,
+.echo-item img {
+  width: 58px;
+  height: 58px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.echo-item-list {
+  display: grid;
+  gap: 12px;
+}
+
+.echo-item {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+  padding: 14px;
+  border: 1px solid var(--theme-border-soft);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.metric-grid--hero {
+  margin-top: 18px;
+}
+
+.summary-tagline {
+  margin: 0 0 14px;
+  font-size: 1.08rem;
+  color: var(--theme-text-main);
+}
+
+.team-grid .info-card {
+  min-height: 100%;
+}
+
+.empty-guide {
+  padding: 22px;
+}
+
+@keyframes guide-panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.985);
+    filter: blur(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes guide-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-float {
+  from {
+    transform: scale(1.02) translateY(0);
+  }
+
+  to {
+    transform: scale(1.05) translateY(-10px);
+  }
+}
+
+@media (max-width: 900px) {
+  .guide-hero,
+  .priority-layout,
+  .kit-layout,
+  .echoes-layout,
+  .weapon-card,
+  .weapon-card--featured {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .guide-topbar__logo {
+    left: 12px;
+    top: 10px;
+    transform: none;
+  }
+
+  .guide-topbar__inner,
+  .guide-shell {
+    width: min(100% - 20px, 1180px);
+  }
+
+  .guide-topbar__inner {
+    min-height: auto;
+    padding: 58px 0 10px;
+  }
+
+  .guide-topbar__core {
+    padding-left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .guide-meta {
+    justify-items: center;
+  }
+
+  .guide-hero,
+  .guide-section,
+  .section-nav {
+    padding: 18px;
+    border-radius: 22px;
+  }
+
+  .guide-stage {
+    min-height: 0;
+  }
+
+  .section-nav {
+    top: 104px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+  }
+
+  .section-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hero-badges {
+    grid-template-columns: 1fr;
+  }
+}

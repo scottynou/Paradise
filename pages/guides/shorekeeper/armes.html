@@ -1,0 +1,24 @@
+<section class="guide-panel" data-page="armes">
+  <header class="panel-header">
+    <span class="eyebrow">Armes</span>
+    <h2>Armes recommandées</h2>
+    <p class="lede">
+      Les pourcentages montrent la performance de l'arme d'après les calculs,
+      mais dans certains cas, certaines armes apportent un confort
+      supplémentaire qui ne peut pas être quantifié. Cela peut les faire passer
+      devant d'autres dans l'ordre de priorité, et dans ce cas nous les
+      placerons plus haut.
+    </p>
+  </header>
+
+  <section id="armesGrid" class="armes-grid" aria-live="polite" aria-atomic="true"></section>
+
+  <div id="armeModal" class="arme-modal" aria-hidden="true">
+    <div class="arme-modal__backdrop"></div>
+    <figure class="arme-modal__content">
+      <button class="close" type="button" aria-label="Fermer">&times;</button>
+      <img id="armeModalImg" src="" alt="Aperçu de l'arme" />
+      <figcaption id="armeModalCaption"></figcaption>
+    </figure>
+  </div>
+</section>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr" data-site-base="." data-theme-kind="brand" data-theme="paradise">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paradise | Tier list personnages</title>
+  <meta
+    name="description"
+    content="Paradise rassemble une tier list personnages Wuthering Waves simple a maintenir, centralisee entre TOA, WW et les guides."
+  />
+  <meta name="theme-color" content="#0E1525" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/base.css" />
+  <link rel="stylesheet" href="./styles/pages/home.css" />
+</head>
+<body class="home-page">
+  <header class="home-shell home-hero">
+    <div class="home-hero__content">
+      <a class="home-logo-link" href="./index.html" aria-label="Accueil Paradise">
+        <img class="home-logo" src="./assets/img/logo/logo.png" alt="Paradise" width="64" height="64" decoding="async" fetchpriority="high" />
+      </a>
+      <p class="home-kicker">Paradise</p>
+      <h1>Tier list personnages.</h1>
+      <p class="home-intro">
+        Une lecture centralisee par mode et par role, pour suivre TOA et WW depuis une
+        seule source facile a mettre a jour.
+      </p>
+    </div>
+  </header>
+
+  <main class="home-shell home-main">
+    <section class="directory-panel tier-panel" id="tierlist">
+      <div class="tier-toolbar" aria-label="Controle de la tier list">
+        <div class="tier-toolbar__lead">
+          <div class="mode-switch" id="modeSwitch" role="tablist" aria-label="Choisir le mode de jeu"></div>
+        </div>
+
+        <div class="directory-toolbar" aria-label="Filtres de la tier list">
+          <div class="directory-filters">
+            <section class="directory-filter-group" aria-labelledby="rarityFiltersLabel">
+              <span class="directory-filter-label" id="rarityFiltersLabel">Rarete</span>
+              <div class="directory-filter-row" id="rarityFilters" role="toolbar" aria-label="Filtrer par rarete"></div>
+            </section>
+
+            <section class="directory-filter-group" aria-labelledby="elementFiltersLabel">
+              <span class="directory-filter-label" id="elementFiltersLabel">Element</span>
+              <div class="directory-filter-row directory-filter-row--icons" id="elementFilters" role="toolbar" aria-label="Filtrer par element"></div>
+            </section>
+
+            <section class="directory-filter-group" aria-labelledby="weaponFiltersLabel">
+              <span class="directory-filter-label" id="weaponFiltersLabel">Arme</span>
+              <div class="directory-filter-row directory-filter-row--icons" id="weaponFilters" role="toolbar" aria-label="Filtrer par arme"></div>
+            </section>
+
+            <button class="directory-reset" id="clearFilters" type="button">Reinitialiser</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="tierlist-stack" id="tierListMount"></div>
+    </section>
+  </main>
+
+  <script defer src="./scripts/app/site-data.js"></script>
+  <script defer src="./scripts/app/shared-data.js"></script>
+  <script defer src="./scripts/app/tierlist-home.js"></script>
+  <script defer src="./scripts/app/site-effects.js"></script>
+</body>
+</html>

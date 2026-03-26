@@ -1,0 +1,450 @@
+[
+  {
+    "sonata": "Rejuvenating Glow",
+    "echoes": [
+      { "name": "Bell-Borne Geochelone", "cost": 4 },
+      { "name": "Fallacy of No Return", "cost": 4 },
+      { "name": "Stonewall Bracer", "cost": 3 },
+      { "name": "Chasm Guardian", "cost": 3 },
+      { "name": "Rocksteady Guardian", "cost": 3 },
+      { "name": "Hoochief", "cost": 3 },
+      { "name": "Vanguard Junrock", "cost": 1 },
+      { "name": "Fission Junrock", "cost": 1 },
+      { "name": "Snip Snap", "cost": 1 },
+      { "name": "Whiff Whaff", "cost": 1 },
+      { "name": "Tick Tack", "cost": 1 },
+      { "name": "Cruisewing", "cost": 1 },
+      { "name": "Fusion Dreadmane", "cost": 1 },
+      { "name": "Dwarf Cassowary", "cost": 1 }
+    ]
+  },
+  {
+    "sonata": "Void Thunder",
+    "echoes": [
+      { "name": "Thundering Mephis", "cost": 4 },
+      { "name": "Tempest Mephis", "cost": 4 },
+      { "name": "Nightmare: Thundering Mephis", "cost": 4 },
+      { "name": "Nightmare: Tempest Mephis", "cost": 4 },
+      { "name": "Violet-Feathered Heron", "cost": 3 },
+      { "name": "Flautist", "cost": 3 },
+      { "name": "Lumiscale Construct", "cost": 3 },
+      { "name": "Vanguard Junrock", "cost": 1 },
+      { "name": "Fission Junrock", "cost": 1 },
+      { "name": "Electro Predator", "cost": 1 },
+      { "name": "Fusion Warrior", "cost": 1 },
+      { "name": "Spectro Prism", "cost": 1 },
+      { "name": "Havoc Prism", "cost": 1 },
+      { "name": "Aero Predator", "cost": 1 },
+      { "name": "Baby Viridblaze Saurian", "cost": 1 },
+      { "name": "Traffic Illuminator", "cost": 1 }
+    ]
+  },
+  {
+    "sonata": "Lingering Tunes",
+    "echoes": [
+      { "name": "Mech Abomination", "cost": 4 },
+      { "name": "Flautist", "cost": 3 },
+      { "name": "Chasm Guardian", "cost": 3 },
+      { "name": "Spearback", "cost": 3 },
+      { "name": "Vanguard Junrock", "cost": 1 },
+      { "name": "Snip Snap", "cost": 1 },
+      { "name": "Zig Zag", "cost": 1 },
+      { "name": "Tick Tack", "cost": 1 },
+      { "name": "Fusion Prism", "cost": 1 },
+      { "name": "Baby Viridblaze Saurian", "cost": 1 },
+      { "name": "Hooscamp", "cost": 1 },
+      { "name": "Diamondclaw", "cost": 1 },
+      { "name": "Lava Larva", "cost": 1 }
+    ]
+  },
+  {
+    "sonata": "Moonlit Clouds",
+    "echoes": [
+      { "name": "Bell-Borne Geochelone", "cost": 4 },
+      { "name": "Impermanence Heron", "cost": 4 },
+      { "name": "Stonewall Bracer", "cost": 3 },
+      { "name": "Viridblaze Saurian", "cost": 3 },
+      { "name": "Spearback", "cost": 3 },
+      { "name": "Carapace", "cost": 3 },
+      { "name": "Glacio Dreadmane", "cost": 3 },
+      { "name": "Fission Junrock", "cost": 1 },
+      { "name": "Zig Zag", "cost": 1 },
+      { "name": "Whiff Whaff", "cost": 1 },
+      { "name": "Glacio Prism", "cost": 1 },
+      { "name": "Cruisewing", "cost": 1 },
+      { "name": "Sabyr Boar", "cost": 1 },
+      { "name": "Diamondclaw", "cost": 1 }
+    ]
+  },
+  {
+    "sonata": "Molten Rift",
+    "echoes": [
+      { "name": "Inferno Rider", "cost": 4 },
+      { "name": "Nightmare: Inferno Rider", "cost": 4 },
+      { "name": "Violet-Feathered Heron", "cost": 3 },
+      { "name": "Viridblaze Saurian", "cost": 3 },
+      { "name": "Havoc Dreadmane", "cost": 3 },
+      { "name": "Electro Predator", "cost": 1 },
+      { "name": "Fusion Warrior", "cost": 1 },
+      { "name": "Snip Snap", "cost": 1 },
+      { "name": "Fusion Prism", "cost": 1 },
+      { "name": "Spectro Prism", "cost": 1 },
+      { "name": "Baby Viridblaze Saurian", "cost": 1 },
+      { "name": "Fusion Dreadmane", "cost": 1 },
+      { "name": "Traffic Illuminator", "cost": 1 },
+      { "name": "Lava Larva", "cost": 1 }
+    ]
+  },
+  {
+    "sonata": "Sierra Gale",
+    "echoes": [
+      { "name": "Feilian Beringal", "cost": 4 },
+      { "name": "Nightmare: Feilian Beringal", "cost": 4 },
+      { "name": "Cyan-Feathered Heron", "cost": 3 },
+      { "name": "Hoochief", "cost": 3 },
+      { "name": "Carapace", "cost": 3 },
+      { "name": "Fusion Warrior", "cost": 1 },
+      { "name": "Whiff Whaff", "cost": 1 },
+      { "name": "Aero Predator", "cost": 1 },
+      { "name": "Sabyr Boar", "cost": 1 },
+      { "name": "Baby Roseshroom", "cost": 1 },
+      { "name": "Hooscamp", "cost": 1 },
+      { "name": "Chirpuff", "cost": 1 },
+      { "name": "Traffic Illuminator", "cost": 1 },
+      { "name": "Dwarf Cassowary", "cost": 1 }
+    ]
+  },
+  {
+    "sonata": "Celestial Light",
+    "echoes": [
+      { "name": "Mourning Aix", "cost": 4 },
+      { "name": "Jué", "cost": 4 },
+      { "name": "Cyan-Feathered Heron", "cost": 3 },
+      { "name": "Rocksteady Guardian", "cost": 3 },
+      { "name": "Autopuppet Scout", "cost": 3 },
+      { "name": "Lightcrusher", "cost": 3 },
+      { "name": "Havoc Warrior", "cost": 1 },
+      { "name": "Zig Zag", "cost": 1 },
+      { "name": "Glacio Predator", "cost": 1 },
+      { "name": "Gulpuff", "cost": 1 },
+      { "name": "Spectro Prism", "cost": 1 },
+      { "name": "Havoc Prism", "cost": 1 },
+      { "name": "Cruisewing", "cost": 1 },
+      { "name": "Hoartoise", "cost": 1 },
+      { "name": "Clang Bang", "cost": 1 }
+    ]
+  },
+  {
+    "sonata": "Havoc Eclipse",
+    "echoes": [
+      { "name": "Crownless", "cost": 4 },
+      { "name": "Dreamless", "cost": 4 },
+      { "name": "Nightmare: Crownless", "cost": 4 },
+      { "name": "Tambourinist", "cost": 3 },
+      { "name": "Roseshroom", "cost": 3 },
+      { "name": "Havoc Dreadmane", "cost": 3 },
+      { "name": "Havoc Warrior", "cost": 1 },
+      { "name": "Tick Tack", "cost": 1 },
+      { "name": "Glacio Prism", "cost": 1 },
+      { "name": "Havoc Prism", "cost": 1 },
+      { "name": "Excarat", "cost": 1 },
+      { "name": "Baby Roseshroom", "cost": 1 },
+      { "name": "Chirpuff", "cost": 1 }
+    ]
+  },
+  {
+    "sonata": "Freezing Frost",
+    "echoes": [
+      { "name": "Lampylumen Myriad", "cost": 4 },
+      { "name": "Tambourinist", "cost": 3 },
+      { "name": "Roseshroom", "cost": 3 },
+      { "name": "Autopuppet Scout", "cost": 3 },
+      { "name": "Glacio Dreadmane", "cost": 3 },
+      { "name": "Lumiscale Construct", "cost": 3 },
+      { "name": "Glacio Predator", "cost": 1 },
+      { "name": "Gulpuff", "cost": 1 },
+      { "name": "Glacio Prism", "cost": 1 },
+      { "name": "Fusion Prism", "cost": 1 },
+      { "name": "Sabyr Boar", "cost": 1 },
+      { "name": "Excarat", "cost": 1 },
+      { "name": "Hoartoise", "cost": 1 },
+      { "name": "Clang Bang", "cost": 1 }
+    ]
+  },
+  {
+    "sonata": "Frosty Resolve",
+    "echoes": [
+      { "name": "Sentry Construct", "cost": 4 },
+      { "name": "Nightmare: Lampylumen Myriad", "cost": 4 },
+      { "name": "Questless Knight", "cost": 3 },
+      { "name": "Abyssal Patricius", "cost": 3 },
+      { "name": "Abyssal Mercator", "cost": 3 },
+      { "name": "Cuddle Wuddle", "cost": 3 },
+      { "name": "Galescourge Stalker", "cost": 1 },
+      { "name": "Chop Chop: Leftless", "cost": 1 },
+      { "name": "Chop Chop: Rightless", "cost": 1 },
+      { "name": "Hocus Pocus", "cost": 1 },
+      { "name": "Lottie Lost", "cost": 1 },
+      { "name": "Chest Mimic", "cost": 1 },
+      { "name": "Golden Junrock", "cost": 1 }
+    ]
+  },
+  {
+    "sonata": "Empyrean Anthem",
+    "echoes": [
+      { "name": "Hecate", "cost": 4 },
+      { "name": "Nightmare: Tempest Mephis", "cost": 4 },
+      { "name": "Nightmare: Lampylumen Myriad", "cost": 4 },
+      { "name": "Nocturnus Knight", "cost": 3 },
+      { "name": "Abyssal Patricius", "cost": 3 },
+      { "name": "Chop Chop", "cost": 3 },
+      { "name": "Vitreum Dancer", "cost": 3 },
+      { "name": "Galescourge Stalker", "cost": 1 },
+      { "name": "Voltscourge Stalker", "cost": 1 },
+      { "name": "Nimbus Wraith", "cost": 1 },
+      { "name": "Hocus Pocus", "cost": 1 },
+      { "name": "Chest Mimic", "cost": 1 },
+      { "name": "Calcified Junrock", "cost": 1 }
+    ]
+  },
+  {
+    "sonata": "Midnight Veil",
+    "echoes": [
+      { "name": "Lorelei", "cost": 4 },
+      { "name": "Nightmare: Impermanence Heron", "cost": 4 },
+      { "name": "Questless Knight", "cost": 3 },
+      { "name": "Nocturnus Knight", "cost": 3 },
+      { "name": "Abyssal Gladius", "cost": 3 },
+      { "name": "Cuddle Wuddle", "cost": 3 },
+      { "name": "Voltscourge Stalker", "cost": 1 },
+      { "name": "Frostscourge Stalker", "cost": 1 },
+      { "name": "Fae Ignis", "cost": 1 },
+      { "name": "Nimbus Wraith", "cost": 1 },
+      { "name": "Chest Mimic", "cost": 1 },
+      { "name": "La Guardia", "cost": 1 },
+      { "name": "Electro Drake", "cost": 1 }
+    ]
+  },
+  {
+    "sonata": "Eternal Radiance",
+    "echoes": [
+      { "name": "Nightmare: Mourning Aix", "cost": 4 },
+      { "name": "Diurnus Knight", "cost": 3 },
+      { "name": "Abyssal Mercator", "cost": 3 },
+      { "name": "Vitreum Dancer", "cost": 3 },
+      { "name": "Rage Against the Statue", "cost": 3 },
+      { "name": "Capitaneus", "cost": 3 },
+      { "name": "Frostscourge Stalker", "cost": 1 },
+      { "name": "Chop Chop: Headless", "cost": 1 },
+      { "name": "Fae Ignis", "cost": 1 },
+      { "name": "Diggy Duggy", "cost": 1 },
+      { "name": "Golden Junrock", "cost": 1 },
+      { "name": "Aero Prism", "cost": 1 },
+      { "name": "Sagittario", "cost": 1 }
+    ]
+  },
+  {
+    "sonata": "Tidebreaking Courage",
+    "echoes": [
+      { "name": "Dragon of Dirge", "cost": 4 },
+      { "name": "Diurnus Knight", "cost": 3 },
+      { "name": "Abyssal Gladius", "cost": 3 },
+      { "name": "Chop Chop", "cost": 3 },
+      { "name": "Hurriclaw", "cost": 3 },
+      { "name": "Chop Chop: Headless", "cost": 1 },
+      { "name": "Chop Chop: Leftless", "cost": 1 },
+      { "name": "Chop Chop: Rightless", "cost": 1 },
+      { "name": "Lottie Lost", "cost": 1 },
+      { "name": "Diggy Duggy", "cost": 1 },
+      { "name": "Calcified Junrock", "cost": 1 },
+      { "name": "Aero Prism", "cost": 1 },
+      { "name": "Aero Drake", "cost": 1 }
+    ]
+  },
+  {
+    "sonata": "Dream of the Lost",
+    "echoes": [
+      { "name": "Nightmare: Hecate", "cost": 4 },
+      { "name": "Reminiscence: Fenrico", "cost": 4 },
+      { "name": "Chop Chop", "cost": 3 },
+      { "name": "Nightmare: Tambourinist", "cost": 3 },
+      { "name": "Fae Ignis", "cost": 1 },
+      { "name": "Nightmare: Havoc Warrior", "cost": 1 },
+      { "name": "Nightmare: Glacio Predator", "cost": 1 }
+    ]
+  },
+  {
+    "sonata": "Flamewing's Shadow",
+    "echoes": [
+      { "name": "Reminiscence: Threnodian - Leviathan", "cost": 4 },
+      { "name": "Kerasaur", "cost": 3 },
+      { "name": "Corrosaurus", "cost": 3 },
+      { "name": "Nightmare: Viridblaze Saurian", "cost": 3 },
+      { "name": "Nimbus Wraith", "cost": 1 },
+      { "name": "Nightmare: Baby Viridblaze Saurian", "cost": 1 },
+      { "name": "Nightmare: Baby Roseshroom", "cost": 1 }
+    ]
+  },
+  {
+    "sonata": "Thread of Severed Fate",
+    "echoes": [
+      { "name": "Reminiscence: Threnodian - Leviathan", "cost": 4 },
+      { "name": "Abyssal Gladius", "cost": 3 },
+      { "name": "Nightmare: Roseshroom", "cost": 3 },
+      { "name": "Havoc Drake", "cost": 1 },
+      { "name": "Nightmare: Tick Tack", "cost": 1 },
+      { "name": "Nightmare: Dwarf Cassowary", "cost": 1 }
+    ]
+  },
+  {
+    "sonata": "Law of Harmony",
+    "echoes": [
+      { "name": "Reminiscence: Fenrico", "cost": 4 },
+      { "name": "Rage Against the Statue", "cost": 3 },
+      { "name": "Nightmare: Cyan-Feathered Heron", "cost": 3 },
+      { "name": "Golden Junrock", "cost": 1 },
+      { "name": "Nightmare: Gulpuff", "cost": 1 },
+      { "name": "Nightmare: Chirpuff", "cost": 1 }
+    ]
+  },
+  {
+    "sonata": "Crown of Valor",
+    "echoes": [
+      { "name": "The False Sovereign", "cost": 4 },
+      { "name": "Lady of the Sea", "cost": 4 },
+      { "name": "Hurriclaw", "cost": 3 },
+      { "name": "Nightmare: Violet-Feathered Heron", "cost": 3 },
+      { "name": "Calcified Junrock", "cost": 1 },
+      { "name": "Nightmare: Electro Predator", "cost": 1 },
+      { "name": "Nightmare: Aero Predator", "cost": 1 }
+    ]
+  },
+  {
+    "sonata": "Gusts of Welkin",
+    "echoes": [
+      { "name": "Reminiscence: Fleurdelys", "cost": 4 },
+      { "name": "Nightmare: Kelpie", "cost": 4 },
+      { "name": "Rage Against the Statue", "cost": 3 },
+      { "name": "Hurriclaw", "cost": 3 },
+      { "name": "Capitaneus", "cost": 3 },
+      { "name": "La Guardia", "cost": 1 },
+      { "name": "Sagittario", "cost": 1 },
+      { "name": "Sacerdos", "cost": 1 },
+      { "name": "Aero Drake", "cost": 1 },
+      { "name": "Electro Drake", "cost": 1 },
+      { "name": "Glacio Drake", "cost": 1 },
+      { "name": "Devotee's Flesh", "cost": 1 }
+    ]
+  },
+  {
+    "sonata": "Flaming Clawprint",
+    "echoes": [
+      { "name": "Lioness of Glory", "cost": 4 },
+      { "name": "Pilgrim's Shell", "cost": 3 },
+      { "name": "Kerasaur", "cost": 3 },
+      { "name": "Corrosaurus", "cost": 3 },
+      { "name": "La Guardia", "cost": 1 },
+      { "name": "Sagittario", "cost": 1 },
+      { "name": "Aero Drake", "cost": 1 },
+      { "name": "Electro Drake", "cost": 1 },
+      { "name": "Fusion Drake", "cost": 1 },
+      { "name": "Spectro Drake", "cost": 1 },
+      { "name": "Havoc Drake", "cost": 1 },
+      { "name": "Devotee's Flesh", "cost": 1 }
+    ]
+  },
+  {
+    "sonata": "Windward Pilgrimage",
+    "echoes": [
+      { "name": "Reminiscence: Fleurdelys", "cost": 4 },
+      { "name": "Nightmare: Kelpie", "cost": 4 },
+      { "name": "Capitaneus", "cost": 3 },
+      { "name": "Pilgrim's Shell", "cost": 3 },
+      { "name": "Kerasaur", "cost": 3 },
+      { "name": "Sacerdos", "cost": 1 },
+      { "name": "Glacio Drake", "cost": 1 },
+      { "name": "Fusion Drake", "cost": 1 },
+      { "name": "Spectro Drake", "cost": 1 },
+      { "name": "Havoc Drake", "cost": 1 },
+      { "name": "Devotee's Flesh", "cost": 1 }
+    ]
+  },
+  {
+    "sonata": "Halo of Starry Radiance",
+    "echoes": [
+      { "name": "Reactor Husk", "cost": 4 },
+      { "name": "Spacetrek Explorer", "cost": 3 },
+      { "name": "Sabercat Reaver", "cost": 3 },
+      { "name": "Sabercat Prowler", "cost": 3 },
+      { "name": "Frostbite Coleoid", "cost": 3 },
+      { "name": "Tremor Warrior", "cost": 1 },
+      { "name": "Mining Drone", "cost": 1 },
+      { "name": "Geospider S4", "cost": 1 }
+    ]
+  },
+  {
+    "sonata": "Chromatic Foam",
+    "echoes": [
+      { "name": "Reactor Husk", "cost": 4 },
+      { "name": "Twin Nova: Nebulous Cannon", "cost": 3 },
+      { "name": "Spacetrek Explorer", "cost": 3 },
+      { "name": "Kronablight", "cost": 3 },
+      { "name": "Reminiscence: Kronaclaw", "cost": 3 },
+      { "name": "Tremor Warrior", "cost": 1 },
+      { "name": "Zip Zap", "cost": 1 },
+      { "name": "Shadow Stepper", "cost": 1 }
+    ]
+  },
+  {
+    "sonata": "Pact of Neonlight Leap",
+    "echoes": [
+      { "name": "Hyvatia", "cost": 4 },
+      { "name": "Mining Reindeer", "cost": 3 },
+      { "name": "Ironhoof", "cost": 3 },
+      { "name": "Sabercat Reaver", "cost": 3 },
+      { "name": "Sabercat Prowler", "cost": 3 },
+      { "name": "Flora Drone", "cost": 1 },
+      { "name": "Geospider S4", "cost": 1 },
+      { "name": "Zip Zap", "cost": 1 }
+    ]
+  },
+  {
+    "sonata": "Rite of Gilded Revelation",
+    "echoes": [
+      { "name": "Hyvatia", "cost": 4 },
+      { "name": "Twin Nova: Nebulous Cannon", "cost": 3 },
+      { "name": "Twin Nova: Collapsar Blade", "cost": 3 },
+      { "name": "Flora Reindeer", "cost": 3 },
+      { "name": "Windlash Coleoid", "cost": 3 },
+      { "name": "Flora Drone", "cost": 1 },
+      { "name": "Mining Drone", "cost": 1 },
+      { "name": "Zip Zap", "cost": 1 }
+    ]
+  },
+  {
+    "sonata": "Sound of True Name",
+    "echoes": [
+      { "name": "Nameless Explorer", "cost": 4 },
+      { "name": "Twin Nova: Collapsar Blade", "cost": 3 },
+      { "name": "Spacetrek Explorer", "cost": 3 },
+      { "name": "Sabercat Reaver", "cost": 3 },
+      { "name": "Sabercat Prowler", "cost": 3 },
+      { "name": "Flora Drone", "cost": 1 },
+      { "name": "Mining Drone", "cost": 1 },
+      { "name": "Zip Zap", "cost": 1 }
+    ]
+  },
+  {
+    "sonata": "Trailblazing Star",
+    "echoes": [
+      { "name": "Sigillum", "cost": 4 },
+      { "name": "Twin Nova: Collapsar Blade", "cost": 3 },
+      { "name": "Kronablight", "cost": 3 },
+      { "name": "Reminiscence: Kronaclaw", "cost": 3 },
+      { "name": "Glommoth", "cost": 3 },
+      { "name": "Geospider S4", "cost": 1 },
+      { "name": "Iceglint Dancer", "cost": 1 },
+      { "name": "Shadow Stepper", "cost": 1 }
+    ]
+  }
+]

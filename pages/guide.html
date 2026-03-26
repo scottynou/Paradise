@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr" data-site-base=".." data-theme-kind="guide" data-theme="default">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paradise | Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/base.css" />
+  <link rel="stylesheet" href="../styles/components/guide-tier.css" />
+  <link rel="stylesheet" href="../styles/pages/guide.css" />
+</head>
+<body class="guide-page" data-theme-kind="guide">
+  <div class="guide-video" id="guideVideo" aria-hidden="true"></div>
+  <div class="guide-overlay" aria-hidden="true"></div>
+
+  <header class="guide-topbar">
+    <a class="site-guide-logo-link guide-topbar__logo" href="../index.html" aria-label="Retour a l'accueil">
+      <img class="site-guide-logo" src="../assets/img/logo/logo.png" alt="Paradise" />
+    </a>
+    <div class="guide-topbar__inner">
+      <div class="guide-topbar__core">
+        <a id="backToHome" class="guide-back" href="../index.html">Retour a l'accueil</a>
+        <div class="guide-meta">
+          <strong id="pageName">Guide</strong>
+          <span id="guideStatus">Chargement...</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="guide-shell">
+    <div id="guideHero"></div>
+    <nav class="section-nav" id="sectionNav" aria-label="Navigation du guide"></nav>
+    <div id="guideApp" class="guide-stage"></div>
+  </main>
+
+  <script defer src="../scripts/data/themes/default.js"></script>
+  <script defer src="../scripts/app/site-data.js"></script>
+  <script defer src="../scripts/app/shared-data.js"></script>
+  <script defer src="../scripts/app/weapon-data.js"></script>
+  <script defer src="../scripts/app/echo-data.js"></script>
+  <script defer src="../scripts/app/guide-tier.js"></script>
+  <script defer src="../scripts/app/guide-page.js"></script>
+  <script defer src="../scripts/app/site-effects.js"></script>
+</body>
+</html>

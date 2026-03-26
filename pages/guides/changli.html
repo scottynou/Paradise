@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr" data-site-base="../..">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Changli | Apercu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="../../styles/base.css" />
+  <link rel="stylesheet" href="../../styles/guides/changli/base.css" />
+  <link rel="stylesheet" href="../../styles/guides/changli/overview.css" />
+
+  <link rel="preload" href="../../assets/img/placeholders/guide-template/character-portrait.svg" as="image" />
+  <link rel="preload" href="../../assets/img/placeholders/guide-template/character-art.svg" as="image" />
+  <link rel="preload" href="../../assets/img/placeholders/guide-template/role-icon.svg" as="image" />
+  <link rel="preload" href="../../assets/img/placeholders/guide-template/element-icon.svg" as="image" />
+  <link rel="preload" href="../../assets/img/placeholders/guide-template/weapon-type-icon.svg" as="image" />
+
+  <link rel="prefetch" href="changli/overview.html" as="fetch" />
+  <link rel="prefetch" href="changli/armes.html" as="fetch" />
+  <link rel="prefetch" href="changli/echo.frag" as="fetch" />
+  <link rel="prefetch" href="changli/priorite.html" as="fetch" />
+  <link rel="prefetch" href="changli/sequence.html" as="fetch" />
+  <link rel="prefetch" href="changli/stat-endgame.frag" as="fetch" />
+  <link rel="prefetch" href="changli/team.html" as="fetch" />
+  <link rel="prefetch" href="changli/resume.html" as="fetch" />
+</head>
+<body
+  class="theme-guide-template theme-guide-changli"
+  data-video-url="https://placeholder-video-url.mp4"
+  data-video-bleed="1.18"
+  data-guide-slug="changli"
+>
+  <header class="topbar" role="banner">
+    <a class="site-guide-logo-link topbar__logo" href="../../index.html" aria-label="Retour a l'accueil">
+      <img class="site-guide-logo" src="../../assets/img/logo/logo.png" alt="Paradise" />
+    </a>
+    <div class="inner">
+      <div class="topbar__core">
+        <a class="brand" href="#/overview" data-route="overview" aria-label="Retour a l'apercu de Changli">
+          <img class="logo" src="../../assets/img/placeholders/guide-template/character-portrait.svg" alt="Placeholder du personnage" />
+          <span class="brand-copy">
+            <strong>Changli</strong>
+            <small>Guide personnage</small>
+          </span>
+        </a>
+
+        <nav class="navbar" id="navbar" role="navigation" aria-label="Navigation du guide Changli">
+          <div class="indicator" aria-hidden="true"></div>
+          <a data-route="overview" href="#/overview">Apercu</a>
+          <a data-route="armes" href="#/armes">Armes</a>
+          <a data-route="echo" href="#/echo">Echo</a>
+          <a data-route="priorite" href="#/priorite">Priorite</a>
+          <a data-route="sequence" href="#/sequence">Sequence</a>
+          <a data-route="stat-endgame" href="#/stat-endgame">Stats endgame</a>
+          <a data-route="team" href="#/team">Team</a>
+          <a data-route="resume" href="#/resume">Resume</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section id="heroSlot" class="hero-slot" aria-live="polite" hidden></section>
+    <section id="app" class="route-stage" aria-live="polite"></section>
+  </main>
+
+  <script defer src="../../scripts/app/site-data.js"></script>
+  <script defer src="../../scripts/app/shared-data.js"></script>
+  <script defer src="../../scripts/app/weapon-data.js"></script>
+  <script defer src="../../scripts/app/echo-data.js"></script>
+  <script defer src="../../scripts/guides/changli/pages-data.js"></script>
+  <script defer src="../../scripts/guides/changli/app.js"></script>
+  <script defer src="../../scripts/app/site-effects.js"></script>
+</body>
+</html>

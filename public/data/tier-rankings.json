@@ -1,0 +1,213 @@
+{
+  "tierOrder": [
+    "T0",
+    "T0.5",
+    "T1",
+    "T1.5",
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "modes": {
+    "TOA": {
+      "dps": {
+        "T0": [
+          "aemeath",
+          "sigrika"
+        ],
+        "T0.5": [
+          "augusta",
+          "cartethyia",
+          "galbrena",
+          "iuno",
+          "luuk-herssen",
+          "phrolova"
+        ],
+        "T1": [
+          "carlotta",
+          "zani"
+        ],
+        "T1.5": [
+          "brant",
+          "jiyan",
+          "phoebe"
+        ],
+        "T2": [
+          "encore",
+          "jinhsi",
+          "xiangli-yao"
+        ],
+        "T3": [
+          "camellya",
+          "rover-havoc"
+        ],
+        "T4": [
+          "calcharo",
+          "chixia",
+          "lingyang"
+        ]
+      },
+      "hybrid": {
+        "T0": [
+          "ciaccona",
+          "lupa",
+          "lynae",
+          "qiuyuan"
+        ],
+        "T0.5": [
+          "iuno"
+        ],
+        "T1": [
+          "brant"
+        ],
+        "T1.5": [
+          "cantarella",
+          "mortefi",
+          "phoebe",
+          "sanhua"
+        ],
+        "T2": [
+          "changli",
+          "zhezhi"
+        ],
+        "T3": [
+          "danjin",
+          "roccia",
+          "yinlin"
+        ],
+        "T4": [
+          "aalto",
+          "jianxin",
+          "lumi",
+          "taoqi",
+          "yangyang"
+        ]
+      },
+      "support": {
+        "T0": [
+          "mornye",
+          "shorekeeper"
+        ],
+        "T0.5": [
+          "chisa",
+          "rover-aero",
+          "verina"
+        ],
+        "T1": [
+          "rover-spectro"
+        ],
+        "T1.5": [
+          "buling"
+        ],
+        "T2": [
+          "baizhi"
+        ],
+        "T3": [],
+        "T4": [
+          "youhu",
+          "yuanwu"
+        ]
+      }
+    },
+    "WW": {
+      "dps": {
+        "T0": [
+          "phrolova"
+        ],
+        "T0.5": [
+          "sigrika"
+        ],
+        "T1": [
+          "augusta",
+          "galbrena",
+          "jiyan"
+        ],
+        "T1.5": [
+          "aemeath",
+          "cartethyia",
+          "zani"
+        ],
+        "T2": [
+          "camellya",
+          "phoebe",
+          "xiangli-yao"
+        ],
+        "T3": [
+          "brant",
+          "carlotta",
+          "iuno",
+          "lingyang",
+          "luuk-herssen"
+        ],
+        "T4": [
+          "calcharo",
+          "chixia",
+          "encore",
+          "jinhsi",
+          "rover-havoc"
+        ]
+      },
+      "hybrid": {
+        "T0": [
+          "qiuyuan"
+        ],
+        "T0.5": [
+          "cantarella",
+          "lupa",
+          "lynae"
+        ],
+        "T1": [
+          "brant",
+          "ciaccona",
+          "iuno"
+        ],
+        "T1.5": [
+          "changli",
+          "mortefi",
+          "phoebe",
+          "sanhua"
+        ],
+        "T2": [
+          "danjin",
+          "roccia"
+        ],
+        "T3": [
+          "zhezhi"
+        ],
+        "T4": [
+          "aalto",
+          "jianxin",
+          "lumi",
+          "taoqi",
+          "yangyang",
+          "yinlin"
+        ]
+      },
+      "support": {
+        "T0": [
+          "shorekeeper"
+        ],
+        "T0.5": [
+          "mornye",
+          "verina"
+        ],
+        "T1": [],
+        "T1.5": [
+          "rover-spectro"
+        ],
+        "T2": [
+          "chisa",
+          "rover-aero"
+        ],
+        "T3": [
+          "baizhi",
+          "buling"
+        ],
+        "T4": [
+          "youhu",
+          "yuanwu"
+        ]
+      }
+    }
+  }
+}

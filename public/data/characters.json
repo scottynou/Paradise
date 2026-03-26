@@ -1,0 +1,443 @@
+[
+  {
+    "id": "aalto",
+    "name": "Aalto",
+    "rarity": 4,
+    "element": "Aero",
+    "weapon": "Pistols",
+    "icon": "/assets/img/tierlist/Aalto.png",
+    "guideSlug": "aalto"
+  },
+  {
+    "id": "aemeath",
+    "name": "Aemeath",
+    "rarity": 5,
+    "element": "Fusion",
+    "weapon": "Sword",
+    "icon": "/assets/img/tierlist/Aemeath.webp",
+    "guideSlug": "aemeath"
+  },
+  {
+    "id": "augusta",
+    "name": "Augusta",
+    "rarity": 5,
+    "element": "Electro",
+    "weapon": "Broadblade",
+    "icon": "/assets/img/tierlist/Augusta.png",
+    "guideSlug": "augusta"
+  },
+  {
+    "id": "baizhi",
+    "name": "Baizhi",
+    "rarity": 4,
+    "element": "Glacio",
+    "weapon": "Rectifier",
+    "icon": "/assets/img/tierlist/Baizhi.png",
+    "guideSlug": "baizhi"
+  },
+  {
+    "id": "brant",
+    "name": "Brant",
+    "rarity": 5,
+    "element": "Fusion",
+    "weapon": "Sword",
+    "icon": "/assets/img/tierlist/Brant.png",
+    "guideSlug": "brant"
+  },
+  {
+    "id": "buling",
+    "name": "Buling",
+    "rarity": 4,
+    "element": "Electro",
+    "weapon": "Rectifier",
+    "icon": "/assets/img/tierlist/Buling.webp",
+    "guideSlug": "buling"
+  },
+  {
+    "id": "calcharo",
+    "name": "Calcharo",
+    "rarity": 5,
+    "element": "Electro",
+    "weapon": "Broadblade",
+    "icon": "/assets/img/tierlist/Calcharo.png",
+    "guideSlug": "calcharo"
+  },
+  {
+    "id": "camellya",
+    "name": "Camellya",
+    "rarity": 5,
+    "element": "Havoc",
+    "weapon": "Sword",
+    "icon": "/assets/img/tierlist/Camellya.png",
+    "guideSlug": "camellya"
+  },
+  {
+    "id": "cantarella",
+    "name": "Cantarella",
+    "rarity": 5,
+    "element": "Havoc",
+    "weapon": "Rectifier",
+    "icon": "/assets/img/tierlist/Cantarella.png",
+    "guideSlug": "cantarella"
+  },
+  {
+    "id": "carlotta",
+    "name": "Carlotta",
+    "rarity": 5,
+    "element": "Glacio",
+    "weapon": "Pistols",
+    "icon": "/assets/img/tierlist/Carlotta.png",
+    "guideSlug": "carlotta"
+  },
+  {
+    "id": "cartethyia",
+    "name": "Cartethyia",
+    "rarity": 5,
+    "element": "Aero",
+    "weapon": "Sword",
+    "icon": "/assets/img/tierlist/Cartethyia.png",
+    "guideSlug": "cartethyia"
+  },
+  {
+    "id": "changli",
+    "name": "Changli",
+    "rarity": 5,
+    "element": "Fusion",
+    "weapon": "Sword",
+    "icon": "/assets/img/tierlist/Changli.png",
+    "guideSlug": "changli"
+  },
+  {
+    "id": "chisa",
+    "name": "Chisa",
+    "rarity": 5,
+    "element": "Havoc",
+    "weapon": "Broadblade",
+    "icon": "/assets/img/tierlist/Chisa.webp",
+    "guideSlug": "chisa"
+  },
+  {
+    "id": "chixia",
+    "name": "Chixia",
+    "rarity": 4,
+    "element": "Fusion",
+    "weapon": "Pistols",
+    "icon": "/assets/img/tierlist/Chixia.png",
+    "guideSlug": "chixia"
+  },
+  {
+    "id": "ciaccona",
+    "name": "Ciaccona",
+    "rarity": 5,
+    "element": "Aero",
+    "weapon": "Pistols",
+    "icon": "/assets/img/tierlist/Ciaccona.png",
+    "guideSlug": "ciaccona"
+  },
+  {
+    "id": "danjin",
+    "name": "Danjin",
+    "rarity": 4,
+    "element": "Havoc",
+    "weapon": "Sword",
+    "icon": "/assets/img/tierlist/Danjin.png",
+    "guideSlug": "danjin"
+  },
+  {
+    "id": "encore",
+    "name": "Encore",
+    "rarity": 5,
+    "element": "Fusion",
+    "weapon": "Rectifier",
+    "icon": "/assets/img/tierlist/Encore.png",
+    "guideSlug": "encore"
+  },
+  {
+    "id": "galbrena",
+    "name": "Galbrena",
+    "rarity": 5,
+    "element": "Fusion",
+    "weapon": "Pistols",
+    "icon": "/assets/img/tierlist/Galbrena.webp",
+    "guideSlug": "galbrena"
+  },
+  {
+    "id": "iuno",
+    "name": "Iuno",
+    "rarity": 5,
+    "element": "Aero",
+    "weapon": "Gauntlets",
+    "icon": "/assets/img/tierlist/Iuno.png",
+    "guideSlug": "iuno"
+  },
+  {
+    "id": "jianxin",
+    "name": "Jianxin",
+    "rarity": 5,
+    "element": "Aero",
+    "weapon": "Gauntlets",
+    "icon": "/assets/img/tierlist/Jianxin.png",
+    "guideSlug": "jianxin"
+  },
+  {
+    "id": "jinhsi",
+    "name": "Jinhsi",
+    "rarity": 5,
+    "element": "Spectro",
+    "weapon": "Broadblade",
+    "icon": "/assets/img/tierlist/Jinhsi.png",
+    "guideSlug": "jinhsi"
+  },
+  {
+    "id": "jiyan",
+    "name": "Jiyan",
+    "rarity": 5,
+    "element": "Aero",
+    "weapon": "Broadblade",
+    "icon": "/assets/img/tierlist/Jiyan.png",
+    "guideSlug": "jiyan"
+  },
+  {
+    "id": "lingyang",
+    "name": "Lingyang",
+    "rarity": 5,
+    "element": "Glacio",
+    "weapon": "Gauntlets",
+    "icon": "/assets/img/tierlist/Lingyang.png",
+    "guideSlug": "lingyang"
+  },
+  {
+    "id": "lumi",
+    "name": "Lumi",
+    "rarity": 4,
+    "element": "Electro",
+    "weapon": "Broadblade",
+    "icon": "/assets/img/tierlist/Lumi.png",
+    "guideSlug": "lumi"
+  },
+  {
+    "id": "lupa",
+    "name": "Lupa",
+    "rarity": 5,
+    "element": "Fusion",
+    "weapon": "Broadblade",
+    "icon": "/assets/img/tierlist/Lupa.png",
+    "guideSlug": "lupa"
+  },
+  {
+    "id": "luuk-herssen",
+    "name": "Luuk Herssen",
+    "rarity": 5,
+    "element": "Spectro",
+    "weapon": "Gauntlets",
+    "icon": "/assets/img/tierlist/Luuk Herssen.webp",
+    "guideSlug": "luuk-herssen"
+  },
+  {
+    "id": "lynae",
+    "name": "Lynae",
+    "rarity": 5,
+    "element": "Spectro",
+    "weapon": "Pistols",
+    "icon": "/assets/img/tierlist/Lynae.webp",
+    "guideSlug": "lynae"
+  },
+  {
+    "id": "mornye",
+    "name": "Mornye",
+    "rarity": 5,
+    "element": "Fusion",
+    "weapon": "Broadblade",
+    "icon": "/assets/img/tierlist/Mornye.webp",
+    "guideSlug": "mornye"
+  },
+  {
+    "id": "mortefi",
+    "name": "Mortefi",
+    "rarity": 4,
+    "element": "Fusion",
+    "weapon": "Pistols",
+    "icon": "/assets/img/tierlist/Mortefi.webp",
+    "guideSlug": "mortefi"
+  },
+  {
+    "id": "phoebe",
+    "name": "Phoebe",
+    "rarity": 5,
+    "element": "Spectro",
+    "weapon": "Rectifier",
+    "icon": "/assets/img/tierlist/Phoebe.png",
+    "guideSlug": "phoebe"
+  },
+  {
+    "id": "phrolova",
+    "name": "Phrolova",
+    "rarity": 5,
+    "element": "Havoc",
+    "weapon": "Rectifier",
+    "icon": "/assets/img/tierlist/Phrolova.png",
+    "guideSlug": "phrolova"
+  },
+  {
+    "id": "qiuyuan",
+    "name": "Qiuyuan",
+    "rarity": 5,
+    "element": "Aero",
+    "weapon": "Sword",
+    "icon": "/assets/img/tierlist/Qiuyuan.webp",
+    "guideSlug": "qiuyuan"
+  },
+  {
+    "id": "roccia",
+    "name": "Roccia",
+    "rarity": 5,
+    "element": "Havoc",
+    "weapon": "Gauntlets",
+    "icon": "/assets/img/tierlist/Roccia.png",
+    "guideSlug": "roccia"
+  },
+  {
+    "id": "rover",
+    "name": "Rover",
+    "rarity": 5,
+    "element": "Spectro",
+    "weapon": "Sword",
+    "icon": "/assets/img/tierlist/Rover.png",
+    "guideSlug": "rover"
+  },
+  {
+    "id": "rover-aero",
+    "name": "Rover (Aero)",
+    "rarity": 5,
+    "element": "Aero",
+    "weapon": "Sword",
+    "icon": "/assets/img/tierlist/Rover.png",
+    "guideSlug": "rover-aero"
+  },
+  {
+    "id": "rover-spectro",
+    "name": "Rover (Spectro)",
+    "rarity": 5,
+    "element": "Spectro",
+    "weapon": "Sword",
+    "icon": "/assets/img/tierlist/Rover.png",
+    "guideSlug": "rover-spectro"
+  },
+  {
+    "id": "rover-havoc",
+    "name": "Rover (Havoc)",
+    "rarity": 5,
+    "element": "Havoc",
+    "weapon": "Sword",
+    "icon": "/assets/img/tierlist/Rover.png",
+    "guideSlug": "rover-havoc"
+  },
+  {
+    "id": "sanhua",
+    "name": "Sanhua",
+    "rarity": 4,
+    "element": "Glacio",
+    "weapon": "Sword",
+    "icon": "/assets/img/tierlist/Sanhua.png",
+    "guideSlug": "sanhua"
+  },
+  {
+    "id": "shorekeeper",
+    "name": "Shorekeeper",
+    "rarity": 5,
+    "element": "Spectro",
+    "weapon": "Rectifier",
+    "icon": "/assets/img/tierlist/shorekeeper.png",
+    "guideSlug": "shorekeeper"
+  },
+  {
+    "id": "sigrika",
+    "name": "Sigrika",
+    "rarity": 5,
+    "element": "Aero",
+    "weapon": "Gauntlets",
+    "icon": "/assets/img/tierlist/Sigrika.webp",
+    "guideSlug": "sigrika"
+  },
+  {
+    "id": "taoqi",
+    "name": "Taoqi",
+    "rarity": 4,
+    "element": "Havoc",
+    "weapon": "Broadblade",
+    "icon": "/assets/img/tierlist/Taoqi.png",
+    "guideSlug": "taoqi"
+  },
+  {
+    "id": "verina",
+    "name": "Verina",
+    "rarity": 5,
+    "element": "Spectro",
+    "weapon": "Rectifier",
+    "icon": "/assets/img/tierlist/Verina.png",
+    "guideSlug": "verina"
+  },
+  {
+    "id": "xiangli-yao",
+    "name": "Xiangli Yao",
+    "rarity": 5,
+    "element": "Electro",
+    "weapon": "Gauntlets",
+    "icon": "/assets/img/tierlist/Xiangli Yao.png",
+    "guideSlug": "xiangli-yao"
+  },
+  {
+    "id": "yangyang",
+    "name": "Yangyang",
+    "rarity": 4,
+    "element": "Aero",
+    "weapon": "Sword",
+    "icon": "/assets/img/tierlist/Yangyang.png",
+    "guideSlug": "yangyang"
+  },
+  {
+    "id": "yinlin",
+    "name": "Yinlin",
+    "rarity": 5,
+    "element": "Electro",
+    "weapon": "Rectifier",
+    "icon": "/assets/img/tierlist/Yinlin.png",
+    "guideSlug": "yinlin"
+  },
+  {
+    "id": "youhu",
+    "name": "Youhu",
+    "rarity": 4,
+    "element": "Glacio",
+    "weapon": "Gauntlets",
+    "icon": "/assets/img/tierlist/Youhu.png",
+    "guideSlug": "youhu"
+  },
+  {
+    "id": "yuanwu",
+    "name": "Yuanwu",
+    "rarity": 4,
+    "element": "Electro",
+    "weapon": "Gauntlets",
+    "icon": "/assets/img/tierlist/Yuanwu.png",
+    "guideSlug": "yuanwu"
+  },
+  {
+    "id": "zani",
+    "name": "Zani",
+    "rarity": 5,
+    "element": "Spectro",
+    "weapon": "Gauntlets",
+    "icon": "/assets/img/tierlist/Zani.png",
+    "guideSlug": "zani"
+  },
+  {
+    "id": "zhezhi",
+    "name": "Zhezhi",
+    "rarity": 5,
+    "element": "Glacio",
+    "weapon": "Rectifier",
+    "icon": "/assets/img/tierlist/Zhezhi.png",
+    "guideSlug": "zhezhi"
+  }
+]
