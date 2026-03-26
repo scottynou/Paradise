@@ -708,6 +708,24 @@ input {
 .guide-panel--overview-editorial::after {
   display: none;
 }
+.guide-panel[data-page="resume"] {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.guide-panel[data-page="resume"]::before,
+.guide-panel[data-page="resume"]::after {
+  display: none;
+}
+
+.guide-panel[data-page="resume"]:hover,
+.guide-panel[data-page="resume"]:focus-within {
+  transform: none;
+  border-color: transparent;
+  box-shadow: none;
+}
 
 .overview-spotlight {
   display: grid;
@@ -3541,6 +3559,20 @@ body.theme-guide-aemeath .mainstat-primary,
 body.theme-guide-aemeath .accent-text,
 body.theme-guide-aemeath .accent-value {
   color: var(--accent-secondary);
+}
+
+body.theme-guide-aemeath .endgame-stat__value {
+  color: var(--accent-dark);
+  background: linear-gradient(
+    120deg,
+    rgba(30, 58, 95, 0.98) 0%,
+    rgba(14, 116, 144, 0.96) 58%,
+    rgba(217, 70, 162, 0.88) 140%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 1px 0 rgba(248, 252, 255, 0.28);
 }
 
 body.theme-guide-aemeath .mainstat-alt {

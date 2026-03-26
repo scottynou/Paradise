@@ -1,108 +1,140 @@
+<p align="center">
+  <img src="./assets/img/logo/logo.png" alt="Paradise" width="110" />
+</p>
+
 # Paradise
 
-Site statique recentre sur une tier list simple a maintenir, partagee entre la home et les guides :
+**Paradise** est un site communautaire autour de **Wuthering Waves**, pense pour offrir une lecture rapide, claire et visuelle des personnages les plus joues.
 
-- `index.html` : tier list centrale TOA / WW
-- `pages/guide.html?slug=<personnage>` : template commun des guides
-- `public/data/characters.json` : registre central des personnages
-- `public/data/tier-rankings.json` : placements par mode, role et tier
-- `public/data/echoes/*.json` : registre central des sonatas, echoes et correspondances
-- `scripts/data/guides/<slug>.js` : contenu d'un guide
-- `scripts/data/themes/<slug>.js` : theme visuel d'un guide
+L'objectif du site est simple :
 
-## Utilisation locale
+- consulter une **tier list lisible** selon le mode de jeu ;
+- filtrer facilement les personnages par **rarete**, **element** et **type d'arme** ;
+- ouvrir un **guide dedie** pour chaque personnage important ;
+- retrouver au meme endroit les informations utiles pour build et jouer un perso.
 
-Le projet lit maintenant des fichiers JSON via `fetch()`.
+---
 
-Il faut donc lancer un petit serveur local au lieu d'ouvrir directement `index.html`.
+## Ce que vous trouvez sur le site
+
+### Tier list centrale
+
+La page d'accueil regroupe la tier list principale du site avec :
+
+- un affichage par mode de jeu ;
+- une lecture par role ;
+- des filtres rapides pour affiner la recherche ;
+- un acces direct aux guides personnages.
+
+Les deux modes actuellement mis en avant sont :
+
+- `TOA`
+- `WW`
+
+### Guides personnages
+
+Chaque guide est construit pour aller a l'essentiel, avec une mise en page plus editoriale que technique.
+
+Selon le personnage, vous pouvez y retrouver :
+
+- un **resume rapide** du role et de la valeur du perso ;
+- les **meilleures armes** ;
+- les **sets d'echo** et les **stats recommandees** ;
+- la **priorite des competences** ;
+- la lecture des **sequences S1 a S6** ;
+- des **reperes de stats endgame** ;
+- des **compositions d'equipe** ;
+- un **verdict final** pour situer le personnage.
+
+---
+
+## Comment utiliser Paradise
+
+### 1. Choisir un mode
+
+Depuis la home, commencez par selectionner le mode de jeu qui vous interesse.
+
+Cela permet d'afficher une tier list adaptee au contenu cible, plutot que de melanger tous les usages.
+
+### 2. Utiliser les filtres
+
+Les filtres vous aident a retrouver rapidement un profil precis :
+
+- `Rarete`
+- `Element`
+- `Arme`
+
+Pratique si vous cherchez uniquement :
+
+- un carry Fusion ;
+- un support Rectifier ;
+- un personnage 4 etoiles ;
+- ou simplement un perso deja present sur votre compte.
+
+### 3. Ouvrir un guide
+
+En cliquant sur un personnage, vous accedez a sa page dediee.
+
+Le guide est pense comme une fiche complete de lecture rapide :
+
+- quoi jouer ;
+- pourquoi le jouer ;
+- avec quoi le build ;
+- dans quelles equipes l'utiliser.
+
+---
+
+## Pour qui est fait le site ?
+
+Paradise vise surtout :
+
+- les joueurs qui veulent une **vue rapide du meta** ;
+- les joueurs qui cherchent un **guide clair en francais** ;
+- les personnes qui veulent comparer plusieurs persos sans passer par plusieurs sites ;
+- ceux qui preferent une presentation plus visuelle et plus directe.
+
+Le site ne cherche pas a noyer l'utilisateur sous la theorie. L'idee est d'avoir une base utile, propre et exploitable rapidement.
+
+---
+
+## Philosophie du projet
+
+Paradise repose sur une ligne simple :
+
+- une **home centrale** pour voir l'etat general du roster ;
+- des **guides individuels** pour approfondir ;
+- une presentation visuelle forte ;
+- une lecture qui reste accessible, meme si vous ne voulez pas tout theorycraft.
+
+En pratique, cela donne un site pense pour etre :
+
+- **rapide a parcourir** ;
+- **coherent visuellement** ;
+- **facile a mettre a jour** ;
+- **agreable a consulter** sur desktop comme sur mobile.
+
+---
+
+## Consultation en local
+
+Si vous ouvrez le projet depuis ce depot, il faut lancer un petit serveur local, car certaines donnees sont chargees via `fetch()`.
 
 Exemples :
 
 - `python -m http.server 8000`
 - `npx serve .`
 
-Puis ouvrir `http://localhost:8000`.
+Puis ouvrez :
 
-## Structure
+- `http://localhost:8000`
 
-- `public/data/characters.json`
-  Metadonnees minimales par personnage :
-  `id`, `name`, `rarity`, `element`, `weapon`, `icon`, `guideSlug`.
+---
 
-- `public/data/tier-rankings.json`
-  Source de verite des tiers :
-  `tierOrder`, puis `modes.TOA` et `modes.WW`, chacun avec `dps`, `hybrid`, `support`.
+## En bref
 
-- `scripts/data/guides/shorekeeper.js`
-  Contenu metier du guide Shorekeeper :
-  hero, apercu, priorites, kit, sequences, armes, echos, stats endgame, teams, resume.
-  La section `Tier` n'est plus stockee ici.
+**Paradise**, c'est :
 
-- `scripts/data/themes/default.js`
-  Theme de secours commun.
-
-- `scripts/data/themes/shorekeeper.js`
-  Palette, ambiance et video de fond du guide Shorekeeper.
-
-- `public/data/echoes/sonatas.json`
-  Noms EN/FR des sonatas. Les images associees vivent dans `assets/img/set/`.
-
-- `public/data/echoes/echoes.json`
-  Noms EN/FR des echoes. Les images associees vivent dans `assets/img/echo/`.
-
-- `public/data/echoes/memberships.json`
-  Source de verite des appartenances echo -> sonata, avec le cout de chaque echo.
-
-- `scripts/app/shared-data.js`
-  Charge les JSON, construit les maps, valide les ids manquants et expose les helpers partages.
-
-- `scripts/app/echo-data.js`
-  Charge les registres des echoes, normalise les variantes de noms et signale les incoherences.
-
-- `scripts/app/guide-tier.js`
-  Widget commun de la section `Tier` pour les guides.
-
-- `scripts/app/tierlist-home.js`
-  Construit la tier list de la home a partir du JSON partage.
-
-- `scripts/app/guide-page.js`
-  Lit le slug, charge le theme + le contenu si le guide existe, puis branche la section `Tier` sur la source centralisee.
-
-## Modifier la tier list
-
-1. Ouvrir `public/data/tier-rankings.json`.
-2. Choisir le mode : `TOA` ou `WW`.
-3. Choisir le role : `dps`, `hybrid` ou `support`.
-4. Deplacer les ids de personnages entre `T0`, `T0.5`, `T1`, `T1.5`, `T2`, `T3`, `T4`.
-
-Le changement est centralise :
-
-- la home change
-- la section `Tier` des guides change
-
-## Ajouter un personnage
-
-1. Ajouter son entree dans `public/data/characters.json`.
-2. Placer son portrait dans `assets/img/tierlist/`.
-3. Utiliser un `id` stable et un `guideSlug` qui servira au lien vers le guide.
-4. Si le personnage doit etre classe, ajouter son `id` dans `public/data/tier-rankings.json`.
-
-## Multi-role
-
-Le systeme accepte qu'un meme personnage apparaisse plusieurs fois dans un meme mode.
-
-Exemple :
-
-- `TOA > hybrid > T1`
-- `TOA > dps > T1.5`
-
-Il suffit de repeter le meme `id` dans plusieurs groupes.
-
-## Ajouter un nouveau guide
-
-1. Ajouter le personnage dans `public/data/characters.json`.
-2. Creer `scripts/data/themes/<slug>.js` avec les couleurs, la video et l'ambiance.
-3. Creer `scripts/data/guides/<slug>.js` avec le texte du guide.
-4. Ajouter son `id` dans `public/data/tier-rankings.json` si tu veux le classer.
-
-Une fois ces fichiers presents, le lien vers `pages/guide.html?slug=<slug>` fonctionne sans nouvelle page HTML.
+- une tier list centralisee ;
+- des guides personnages complets ;
+- une presentation claire ;
+- un format pense avant tout pour les utilisateurs.

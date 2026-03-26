@@ -694,6 +694,25 @@ input {
   display: none;
 }
 
+.guide-panel[data-page="resume"] {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.guide-panel[data-page="resume"]::before,
+.guide-panel[data-page="resume"]::after {
+  display: none;
+}
+
+.guide-panel[data-page="resume"]:hover,
+.guide-panel[data-page="resume"]:focus-within {
+  transform: none;
+  border-color: transparent;
+  box-shadow: none;
+}
+
 .overview-spotlight {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);

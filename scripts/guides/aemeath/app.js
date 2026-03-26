@@ -48,7 +48,7 @@ const PAGES = {
   resume: {
     title: "Resume",
     label: "Resume",
-    js: [],
+    js: ["../../scripts/app/guide-resume-tier.js"],
   },
 };
 
@@ -553,7 +553,7 @@ async function fetchPage(route) {
   }
 
   const inlinePages = window.TemplateCharacterPages || null;
-  if (route !== "stat-endgame" && inlinePages && typeof inlinePages[route] === "string") {
+  if (route !== "stat-endgame" && route !== "resume" && inlinePages && typeof inlinePages[route] === "string") {
     const inlineHTML = cleanFragmentHTML(personalizeMarkup(inlinePages[route]), route);
     pageCache.set(route, inlineHTML);
     return inlineHTML;
@@ -643,6 +643,14 @@ async function render(route) {
 
     if (window.PageInit && typeof window.PageInit[nextRoute] === "function") {
       window.PageInit[nextRoute]();
+    }
+
+    if (
+      nextRoute === "resume" &&
+      window.ParadiseGuideResumeTier &&
+      typeof window.ParadiseGuideResumeTier.mount === "function"
+    ) {
+      window.ParadiseGuideResumeTier.mount(view);
     }
   }, previousView ? 140 : 0);
 

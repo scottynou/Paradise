@@ -3,108 +3,139 @@ window.PageInit = window.PageInit || {};
 window.PageInit["team"] = function () {
   var root = document.getElementById("teamCards");
   var renderer = window.ParadiseGuideTeamCards;
-  var portrait = "../../assets/img/placeholders/guide-template/character-portrait.svg";
   var context = window.TemplateCharacterContext || {};
   var currentName =
     (context.character && context.character.name) ||
     (context.display && context.display.name) ||
-    "[Nom du personnage]";
+    "Aemeath";
 
   if (!root || !renderer || typeof renderer.render !== "function") {
     return;
+  }
+
+  function character(name, image, slug, alternatives) {
+    return {
+      name: name,
+      image: image,
+      guideSlug: slug,
+      alternatives: alternatives || [],
+    };
   }
 
   renderer.render(root, {
     variant: "minimal",
     cards: [
       {
-        title: "Composition 1",
+        title: "Meilleure equipe",
         slots: [
-          {
-            name: "[Personnage 1]",
-            image: portrait,
-          },
-          {
-            name: "[Personnage 2]",
-            image: portrait,
-            alternatives: [
-              {
-                name: "[Alternative 1]",
-                image: portrait,
-              },
-              {
-                name: "[Alternative 2]",
-                image: portrait,
-              },
-            ],
-          },
-          {
-            name: currentName,
-            image: portrait,
-          },
+          character(
+            currentName,
+            "../../assets/img/tierlist/Aemeath.webp",
+            "aemeath"
+          ),
+          character(
+            "Lynae",
+            "../../assets/img/tierlist/Lynae.webp",
+            "lynae"
+          ),
+          character(
+            "Mornye",
+            "../../assets/img/tierlist/Mornye.webp",
+            "mornye",
+            [
+              character(
+                "Shorekeeper",
+                "../../assets/img/tierlist/shorekeeper.png",
+                "shorekeeper"
+              ),
+              character(
+                "Verina",
+                "../../assets/img/tierlist/Verina.png",
+                "verina"
+              ),
+              character(
+                "Chisa",
+                "../../assets/img/tierlist/Chisa.webp",
+                "chisa"
+              ),
+            ]
+          ),
         ],
       },
       {
-        title: "Composition 2",
+        title: "Mono Fusion",
         slots: [
-          {
-            name: "[Personnage 3]",
-            image: portrait,
-            alternatives: [
-              {
-                name: "[Alternative 3]",
-                image: portrait,
-              },
-            ],
-          },
-          {
-            name: "[Personnage 4]",
-            image: portrait,
-          },
-          {
-            name: currentName,
-            image: portrait,
-          },
+          character(
+            currentName,
+            "../../assets/img/tierlist/Aemeath.webp",
+            "aemeath"
+          ),
+          character(
+            "Lupa",
+            "../../assets/img/tierlist/Lupa.png",
+            "lupa"
+          ),
+          character(
+            "Mornye",
+            "../../assets/img/tierlist/Mornye.webp",
+            "mornye",
+            [
+              character(
+                "Brant",
+                "../../assets/img/tierlist/Brant.png",
+                "brant"
+              ),
+              character(
+                "Changli",
+                "../../assets/img/tierlist/Changli.png",
+                "changli"
+              ),
+            ]
+          ),
         ],
       },
       {
-        title: "Composition 3",
+        title: "Equipes alternatives",
         slots: [
-          {
-            name: "[Personnage 5]",
-            image: portrait,
-          },
-          {
-            name: "[Personnage 6]",
-            image: portrait,
-          },
-          {
-            name: currentName,
-            image: portrait,
-          },
-        ],
-      },
-      {
-        title: "Composition 4",
-        slots: [
-          {
-            name: "[Personnage 7]",
-            image: portrait,
-          },
-          {
-            name: "[Personnage 8]",
-            image: portrait,
-            alternatives: [
-              {
-                name: "[Alternative 4]",
-                image: portrait,
-              },
-            ],
-          },
-          {
-            name: currentName,
-            image: portrait,
-          },
+          character(
+            currentName,
+            "../../assets/img/tierlist/Aemeath.webp",
+            "aemeath"
+          ),
+          character(
+            "Lupa",
+            "../../assets/img/tierlist/Lupa.png",
+            "lupa",
+            [
+              character(
+                "Brant",
+                "../../assets/img/tierlist/Brant.png",
+                "brant"
+              ),
+              character(
+                "Changli",
+                "../../assets/img/tierlist/Changli.png",
+                "changli"
+              ),
+            ]
+          ),
+          character(
+            "Shorekeeper",
+            "../../assets/img/tierlist/shorekeeper.png",
+            "shorekeeper",
+            [
+              character(
+                "Verina",
+                "../../assets/img/tierlist/Verina.png",
+                "verina"
+              ),
+              character(
+                "Chisa",
+                "../../assets/img/tierlist/Chisa.webp",
+                "chisa"
+              ),
+            ]
+          ),
         ],
       },
     ],

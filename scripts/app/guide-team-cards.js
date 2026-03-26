@@ -100,7 +100,7 @@
 
   function renderSlot(slot) {
     var alternatives = Array.isArray(slot.alternatives)
-      ? slot.alternatives.slice(0, 2)
+      ? slot.alternatives.slice(0, 3)
       : [];
 
     return [

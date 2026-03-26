@@ -1,4 +1,4 @@
-﻿const PAGES = {
+const PAGES = {
   overview: {
     title: "Aper\u00e7u",
     label: "Aper\u00e7u",
@@ -40,7 +40,7 @@
   resume: {
     title: "R\u00e9sum\u00e9",
     label: "R\u00e9sum\u00e9",
-    js: [],
+    js: ["../../scripts/app/guide-resume-tier.js"],
   },
 };
 
@@ -293,6 +293,14 @@ async function render(route) {
 
     if (window.PageInit && typeof window.PageInit[nextRoute] === "function") {
       window.PageInit[nextRoute]();
+    }
+
+    if (
+      nextRoute === "resume" &&
+      window.ParadiseGuideResumeTier &&
+      typeof window.ParadiseGuideResumeTier.mount === "function"
+    ) {
+      window.ParadiseGuideResumeTier.mount(view);
     }
   }, previousView ? 140 : 0);
 
