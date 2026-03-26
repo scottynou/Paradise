@@ -723,6 +723,21 @@ input {
   box-shadow: none;
 }
 
+.guide-panel[data-page="resume"] .tier-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.guide-panel[data-page="resume"] .tier-showcase-grid {
+  display: contents;
+}
+
+.guide-panel[data-page="resume"] .tier-showcase {
+  flex: 1 1 320px;
+  min-width: 0;
+}
+
 .overview-spotlight {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
