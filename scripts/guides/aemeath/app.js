@@ -33,13 +33,13 @@ const PAGES = {
     js: ["../../scripts/guides/aemeath/sequence.js"],
   },
   "stat-endgame": {
-    title: "Stats endgame",
-    label: "Stats endgame",
+    title: "Stats finales",
+    label: "Stats finales",
     js: [],
   },
   team: {
-    title: "Team",
-    label: "Team",
+    title: "Equipes",
+    label: "Equipes",
     js: [
       "../../scripts/app/guide-team-cards.js",
       "../../scripts/guides/aemeath/team.js",
@@ -62,15 +62,15 @@ const OVERVIEW_PAGE = `
       <ul class="overview-keypoints">
         <li>
           <strong>Degats massifs.</strong>
-          Tres gros AoE et une seconde Ultimate qui nettoie presque tout.
+          Tres gros degats de zone et une attaque finale qui nettoie presque tout.
         </li>
         <li>
           <strong>Flexibilite d'equipe.</strong>
-          Peut jouer Tune Rupture, Fusion Burst ou Mono Fusion.
+          Peut jouer Rupture d'accord, Explosion fusion ou Fusion pure.
         </li>
         <li>
           <strong>Rotation structuree.</strong>
-          Cycle base sur Ult -> Forte -> Ult pour maximiser les degats.
+          Cycle base sur Liberation resonatrice -> Forte -> Final pour maximiser les degats.
         </li>
       </ul>
     </article>
@@ -78,15 +78,15 @@ const OVERVIEW_PAGE = `
     <aside class="overview-editorial__aside" aria-label="Lecture rapide">
       <article class="overview-sidecard overview-sidecard--primary">
         <span class="overview-sidecard__label">Ce qu'elle apporte</span>
-        <p><strong>DPS principal polyvalent.</strong> Gros degats et adaptation selon l'equipe.</p>
+        <p><strong>Profil offensif polyvalent.</strong> Gros degats et adaptation selon l'equipe.</p>
       </article>
 
       <article class="overview-sidecard">
         <span class="overview-sidecard__label">A savoir</span>
         <ul class="overview-sidecard__list">
           <li><strong>Kit complexe.</strong> Demande de comprendre les modes et la rotation.</li>
-          <li><strong>Depend de l'equipe.</strong> Son mode (Rupture / Fusion) change selon tes persos.</li>
-          <li><strong>Timing important.</strong> Sa puissance depend surtout de bien enchainer ses skills.</li>
+          <li><strong>Depend de l'equipe.</strong> Son mode (Rupture d'accord / Explosion fusion) change selon tes persos.</li>
+          <li><strong>Timing important.</strong> Sa puissance depend surtout de la bonne execution de ses competences.</li>
         </ul>
       </article>
     </aside>
@@ -212,7 +212,7 @@ const ECHO_PAGE = `
       </div>
 
       <div class="echo-substats-divider">
-        <span>Substats prioritaires</span>
+        <span>Sous-stats prioritaires</span>
       </div>
 
       <div class="substats-grid substats-grid--single">
@@ -220,10 +220,10 @@ const ECHO_PAGE = `
           <h4>Ordre recommande</h4>
           <p>
             <span class="accent-text">Recharge d'energie</span> (jusqu'au seuil voulu)
-            &gt; <span class="accent-text">DGT CRIT</span>
-            = <span class="accent-text">Taux CRIT</span>
+            &gt; <span class="accent-text">Degats critiques</span>
+            = <span class="accent-text">Taux critique</span>
             &gt; <span class="accent-text">ATQ%</span>
-            &gt; <span class="accent-text">DGT d'Ultime%</span>
+            &gt; <span class="accent-text">DGT de Liberation resonatrice%</span>
             &gt; <span class="accent-text">ATQ</span>
           </p>
         </article>
@@ -246,7 +246,7 @@ const PRIORITE_PAGE = `
           <img src="../../assets/img/guides/aemeath/Liberation_resonatrice.webp" alt="" loading="lazy" decoding="async" />
         </span>
         <div class="priority-copy">
-          <h3>Liberation de resonance</h3>
+          <h3>Liberation resonatrice</h3>
           <p>
             Priorite absolue. C'est la source de degats la plus importante d'Aemeath
             et l'investissement le plus rentable des le depart.
@@ -272,7 +272,7 @@ const PRIORITE_PAGE = `
           <img src="../../assets/img/guides/aemeath/Competence_resonatrice.webp" alt="" loading="lazy" decoding="async" />
         </span>
         <div class="priority-copy">
-          <h3>Competence de resonance</h3>
+          <h3>Competence resonatrice</h3>
           <p>
             A monter ensuite. Elle reste derriere la Liberation et le Forte en valeur,
             mais apporte quand meme un gain utile a la rotation.
@@ -298,7 +298,7 @@ const PRIORITE_PAGE = `
           <img src="../../assets/img/guides/aemeath/Competence_dIntro.webp" alt="" loading="lazy" decoding="async" />
         </span>
         <div class="priority-copy">
-          <h3>Competence d'intro</h3>
+          <h3>Competence d'Intro</h3>
           <p>
             Derniere priorite. Elle peut aussi etre laissee de cote pendant la progression
             si vous voulez optimiser les ressources au maximum.
@@ -318,15 +318,15 @@ window.TemplateCharacterPages.priorite = PRIORITE_PAGE;
 const DEFAULT_ROUTE = "overview";
 const CHARACTER_SLUG = "aemeath";
 const PLACEHOLDER = "../../assets/img/placeholders/guide-template";
-const ROLE_LABEL = "Main DPS";
+const ROLE_LABEL = "Attaquante principale";
 const ROLE_ICON = site.resolvePath("assets/img/guides/aemeath/Icon_Main_Damage_Dealer.webp");
 const WEAPON_ICON = site.resolvePath("assets/img/types armes/\u00e9p\u00e9e.webp");
 const SPLASH_ART = site.resolvePath("assets/img/guides/aemeath/Aemeath_Splash_Art.webp");
 const DEFAULT_CHARACTER = {
   name: "Aemeath",
-  kicker: "Main DPS / Element / Rarete a definir",
+  kicker: "Attaquante principale Fusion 5 etoiles",
   positioning:
-    "Description du personnage a completer. Ce texte placeholder reprend la longueur moyenne du bloc hero.",
+    "Une attaquante Fusion haut de gamme centree sur de gros degats, plusieurs modes de jeu et une vraie flexibilite d'equipe.",
   metadata: [
     {
       label: ROLE_LABEL,
@@ -354,6 +354,7 @@ const heroSlot = document.getElementById("heroSlot");
 const navbar = document.getElementById("navbar");
 const pageCache = new Map();
 const loadedJS = new Set();
+const INLINE_PAGE_ROUTES = new Set(["overview", "armes", "echo", "priorite"]);
 
 let currentRoute = "";
 function buildCharacterContext(character) {
@@ -366,9 +367,9 @@ function buildCharacterContext(character) {
   return {
     slug: slug,
     name: character.name || DEFAULT_CHARACTER.name,
-    kicker: [elementLabel, weaponLabel, rarityLabel].join(" - "),
+    kicker: [ROLE_LABEL, elementLabel, rarityLabel].join(" "),
     positioning:
-      "Description du personnage a completer. Ce texte placeholder reprend la longueur moyenne du bloc hero.",
+      "Une attaquante Fusion haut de gamme centree sur de gros degats, plusieurs modes de jeu et une vraie flexibilite d'equipe.",
     metadata: [
       {
         label: ROLE_LABEL,
@@ -553,7 +554,7 @@ async function fetchPage(route) {
   }
 
   const inlinePages = window.TemplateCharacterPages || null;
-  if (route !== "stat-endgame" && route !== "resume" && inlinePages && typeof inlinePages[route] === "string") {
+  if (INLINE_PAGE_ROUTES.has(route) && inlinePages && typeof inlinePages[route] === "string") {
     const inlineHTML = cleanFragmentHTML(personalizeMarkup(inlinePages[route]), route);
     pageCache.set(route, inlineHTML);
     return inlineHTML;

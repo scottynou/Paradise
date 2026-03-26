@@ -225,6 +225,45 @@ select,
     drop-shadow(0 0 18px color-mix(in srgb, var(--theme-accent) 14%, transparent));
 }
 
+.guide-panel[data-page="resume"] article.tier-card,
+.guide-panel[data-page="resume"] .tier-showcase,
+.guide-panel[data-page="resume"] .tier-showcase--toa,
+.guide-panel[data-page="resume"] .tier-showcase--ww {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.guide-panel[data-page="resume"] article.tier-card {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 0 !important;
+  align-items: stretch !important;
+  overflow: hidden !important;
+  border-radius: 18px !important;
+}
+
+.guide-panel[data-page="resume"] .tier-showcase {
+  min-width: 0 !important;
+  overflow: hidden !important;
+}
+
+.guide-panel[data-page="resume"] .tier-showcase__media {
+  overflow: hidden;
+  border-radius: 0 !important;
+  background: transparent;
+}
+
+.guide-panel[data-page="resume"] .tier-showcase__media::after {
+  display: none;
+}
+
+.guide-panel[data-page="resume"] .tier-showcase__media img {
+  border-radius: 0 !important;
+}
+
 .visually-hidden,
 .sr-only {
   position: absolute !important;

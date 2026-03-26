@@ -215,7 +215,7 @@
 
   function renderMinimalAlternative(item) {
     return [
-      '<li class="team-minimal-slot__variant-item">',
+      '<li class="team-minimal-slot__variant-item" style="width: auto; flex: 0 0 auto;">',
       renderLinkableBlock(
         "team-minimal-slot__variant-link",
         item,
@@ -228,7 +228,7 @@
 
   function renderMinimalAlternativePlaceholder() {
     return [
-      '<li class="team-minimal-slot__variant-item team-minimal-slot__variant-item--placeholder" aria-hidden="true">',
+      '<li class="team-minimal-slot__variant-item team-minimal-slot__variant-item--placeholder" aria-hidden="true" style="width: auto; flex: 0 0 auto;">',
       '  <span class="team-minimal-slot__variant-link team-minimal-slot__variant-link--placeholder">',
       '    <span class="team-minimal-slot__alt team-minimal-slot__alt--ghost"></span>',
       "  </span>",
@@ -247,18 +247,25 @@
           return renderMinimalAlternativePlaceholder();
         })
       );
+    var variantAreaStyle = variantItems.length
+      ? ' style="min-height: var(--team-minimal-variant-row-height);"'
+      : "";
+    var variantsListStyle = variantItems.length
+      ? ' style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: var(--team-minimal-variant-gap); width: min(100%, max-content); max-width: 100%; margin-inline: auto;"'
+      : "";
 
     return [
       '<div class="team-minimal-slot">',
       renderMinimalMain(slot),
       '<div class="team-minimal-slot__variant-area"' +
+        variantAreaStyle +
         (alternatives.length
           ? ' aria-label="Variantes pour ' + escapeHTML(slot.name || "") + '"'
           : ' aria-hidden="true"') +
         ">",
       variantItems.length
         ? [
-            '  <ul class="team-minimal-slot__variants">',
+            '  <ul class="team-minimal-slot__variants"' + variantsListStyle + ">",
             variantItems.join(""),
             "  </ul>",
           ].join("")

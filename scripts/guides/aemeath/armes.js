@@ -21,7 +21,7 @@ window.PageInit["armes"] = function () {
       label: "Meilleur choix",
       percent: 100.0,
       note:
-        "L'arme signature d'Aemeath est clairement son meilleur choix. Elle lui apporte de la RES Fusion, de l'ignore DEF sur son Ultime, ainsi que du bonus de degats, du Taux CRIT et une tres grosse ATQ de base.",
+        "L'arme signature d'Aemeath est clairement son meilleur choix. Elle lui apporte de la RES Fusion, de l'ignorance de DEF sur sa Liberation resonatrice, ainsi que du bonus de degats, du taux critique et une tres grosse ATQ de base.",
     },
     {
       filename: "5star_Emerald_of_Genesis.png",
@@ -29,7 +29,7 @@ window.PageInit["armes"] = function () {
       label: "Alternative 5 etoiles",
       percent: 83.5,
       note:
-        "En supposant un substat de Recharge d'energie en moins, reinvesti dans les stats offensives. C'est sa deuxieme meilleure option et la meilleure 5 etoiles permanente : meme ATQ de base et meme Taux CRIT que sa signature, avec en plus de la Recharge d'energie et de l'ATQ%.",
+        "En supposant une sous-stat de Recharge d'energie en moins, reinvestie dans les stats offensives. C'est sa deuxieme meilleure option et la meilleure 5 etoiles permanente : meme ATQ de base et meme taux critique que sa signature, avec en plus de la Recharge d'energie et de l'ATQ%.",
     },
     {
       filename: "5star_Red_Spring.png",
@@ -37,23 +37,23 @@ window.PageInit["armes"] = function () {
       label: "Alternative 5 etoiles",
       percent: 83.5,
       note:
-        "Comme les autres 5 etoiles CRIT, elle peut legerement depasser Emeraude eternelle si Aemeath n'a pas besoin de Recharge d'energie supplementaire. Elle prend un petit avantage car Aemeath inflige aussi des degats d'Attaque normale que cette arme peut renforcer.",
+        "Comme les autres 5 etoiles critiques, elle peut legerement depasser Emeraude eternelle si Aemeath n'a pas besoin de Recharge d'energie supplementaire. Elle prend un petit avantage car Aemeath inflige aussi des degats d'Attaque normale que cette arme peut renforcer.",
     },
     {
       filename: "5star_Emerald_Sentence.png",
       refine: "R1",
-      label: "Stat stick 5 etoiles",
+      label: "Option statistiques 5 etoiles",
       percent: 83.2,
       note:
-        "Surtout une arme a stats pour Aemeath avec son ATQ et son Taux CRIT. Comme elle ne joue pas sur les degats d'Attaque lourde, elle profite peu de son effet principal, en dehors d'un leger bonus de degats d'Echo pour l'equipe.",
+        "Surtout une arme purement statistique pour Aemeath avec son ATQ et son taux critique. Comme elle ne joue pas sur les degats d'Attaque lourde, elle profite peu de son effet principal, en dehors d'un leger bonus de degats d'Echo pour l'equipe.",
     },
     {
       filename: "5star_Blazing_Brilliance.png",
       refine: "R1",
-      label: "Stat stick 5 etoiles",
+      label: "Option statistiques 5 etoiles",
       percent: 82.9,
       note:
-        "Bonne arme de statistiques pour Aemeath avec ATQ et DGT CRIT, mais elle ne profite pas vraiment des effets centres sur les degats de Competence. Solide, sans etre optimisee pour elle.",
+        "Bonne arme de statistiques pour Aemeath avec ATQ et degats critiques, mais elle ne profite pas vraiment des effets centres sur les degats de Competence. Solide, sans etre optimisee pour elle.",
     },
     {
       filename: "4star_Feather_Edge.png",
@@ -61,7 +61,7 @@ window.PageInit["armes"] = function () {
       label: "Meilleure 4 etoiles",
       percent: 78.1,
       note:
-        "La meilleure 4 etoiles pour Aemeath. Elle exploite tres bien les bonus d'ATQ et de degats d'Ultime tout en apportant une statistique CRIT utile. Sa seule vraie limite reste son ATQ de base bien plus faible que celle des 5 etoiles.",
+        "La meilleure 4 etoiles pour Aemeath. Elle exploite tres bien les bonus d'ATQ et de degats de Liberation resonatrice tout en apportant une statistique critique utile. Sa seule vraie limite reste son ATQ de base bien plus faible que celle des 5 etoiles.",
     },
     {
       filename: "4star_Somnoire_Anchor.png",
@@ -69,7 +69,7 @@ window.PageInit["armes"] = function () {
       label: "Bonne 4 etoiles evenement",
       percent: 74.8,
       note:
-        "Une bonne option evenementielle qui donne de la montee en puissance en ATQ et du Taux CRIT. C'est une 4 etoiles propre a jouer, mais elle reste nettement derriere toutes les bonnes 5 etoiles.",
+        "Une bonne option evenementielle qui donne de la montee en puissance en ATQ et du taux critique. C'est une 4 etoiles propre a jouer, mais elle reste nettement derriere toutes les bonnes 5 etoiles.",
     },
     {
       filename: "4star_Endless_Collapse.png",
@@ -85,7 +85,7 @@ window.PageInit["armes"] = function () {
       label: "Option gratuite",
       percent: 73.9,
       note:
-        "La meilleure option sans gacha pour debuter avec Aemeath. Elle se recupere gratuitement au debut du jeu et donne une base d'ATQ correcte, mais il faut la remplacer par une 5 etoiles des que possible.",
+        "La meilleure option sans tirages pour debuter avec Aemeath. Elle se recupere gratuitement au debut du jeu et donne une base d'ATQ correcte, mais il faut la remplacer par une 5 etoiles des que possible.",
     },
   ];
 

@@ -63,7 +63,7 @@ window.PageInit["team"] = function () {
         ],
       },
       {
-        title: "Mono Fusion",
+        title: "Fusion pure",
         slots: [
           character(
             currentName,

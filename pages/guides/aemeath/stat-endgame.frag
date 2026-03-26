@@ -1,10 +1,11 @@
 <section class="guide-panel endgame-page" data-page="stat-endgame">
   <header class="panel-header">
-    <span class="eyebrow">Stats endgame</span>
+    <span class="eyebrow">Stats finales</span>
     <h2>Reperes a viser</h2>
     <p class="lede">
       La Recharge d'energie reste le premier cap a verrouiller. Une fois ce
-      seuil atteint, vise surtout Taux CRIT, DGT CRIT, ATQ et bonus DGT Fusion.
+      seuil atteint, vise surtout taux critique, degats critiques, ATQ et bonus
+      de degats Fusion.
     </p>
   </header>
 
@@ -22,7 +23,7 @@
 
     <article class="endgame-stat">
       <div class="endgame-stat__head">
-        <span class="endgame-stat__label">Taux CRIT</span>
+        <span class="endgame-stat__label">Taux critique</span>
       </div>
       <strong class="endgame-stat__value">65%+</strong>
       <p class="endgame-stat__note">Avant bonus de set.</p>
@@ -30,7 +31,7 @@
 
     <article class="endgame-stat">
       <div class="endgame-stat__head">
-        <span class="endgame-stat__label">DGT CRIT</span>
+        <span class="endgame-stat__label">Degats critiques</span>
       </div>
       <strong class="endgame-stat__value">210 - 260%+</strong>
     </article>
@@ -44,7 +45,7 @@
 
     <article class="endgame-stat">
       <div class="endgame-stat__head">
-        <span class="endgame-stat__label">Bonus DGT Fusion</span>
+        <span class="endgame-stat__label">Bonus de degats Fusion</span>
       </div>
       <strong class="endgame-stat__value">40 - 70%+</strong>
     </article>
