@@ -248,7 +248,7 @@ const PRIORITE_PAGE = `
         <div class="priority-copy">
           <h3>Liberation resonatrice</h3>
           <p>
-            Priorite absolue. C'est la source de degats la plus importante d'Aemeath
+            <strong>Vers le point du jour.</strong> Priorite absolue. C'est la source de degats la plus importante d'Aemeath
             et l'investissement le plus rentable des le depart.
           </p>
         </div>
@@ -261,7 +261,7 @@ const PRIORITE_PAGE = `
         <div class="priority-copy">
           <h3>Circuit Forte</h3>
           <p>
-            Juste derriere la Liberation. Le Forte porte une grosse partie de sa rotation
+            <strong>Sculpter le silence.</strong> Juste derriere la Liberation. Le Forte porte une grosse partie de sa rotation
             et de ses degats reels, donc il doit etre monte tres vite.
           </p>
         </div>
@@ -274,7 +274,7 @@ const PRIORITE_PAGE = `
         <div class="priority-copy">
           <h3>Competence resonatrice</h3>
           <p>
-            A monter ensuite. Elle reste derriere la Liberation et le Forte en valeur,
+            <strong>Voyage partag&eacute;.</strong> A monter ensuite. Elle reste derriere la Liberation et le Forte en valeur,
             mais apporte quand meme un gain utile a la rotation.
           </p>
         </div>
@@ -287,7 +287,7 @@ const PRIORITE_PAGE = `
         <div class="priority-copy">
           <h3>Attaques normales</h3>
           <p>
-            Peut etre retardee pour economiser des ressources. La perte de degats reste
+            <strong>Calibrage de l'infini.</strong> Peut etre retardee pour economiser des ressources. La perte de degats reste
             faible par rapport aux trois priorites du dessus.
           </p>
         </div>
@@ -300,7 +300,7 @@ const PRIORITE_PAGE = `
         <div class="priority-copy">
           <h3>Competence d'Intro</h3>
           <p>
-            Derniere priorite. Elle peut aussi etre laissee de cote pendant la progression
+            <strong>Ouverture du d&eacute;part.</strong> Derniere priorite. Elle peut aussi etre laissee de cote pendant la progression
             si vous voulez optimiser les ressources au maximum.
           </p>
         </div>
@@ -354,7 +354,7 @@ const heroSlot = document.getElementById("heroSlot");
 const navbar = document.getElementById("navbar");
 const pageCache = new Map();
 const loadedJS = new Set();
-const INLINE_PAGE_ROUTES = new Set(["overview", "armes", "echo", "priorite"]);
+const INLINE_PAGE_ROUTES = new Set(["overview", "armes", "priorite"]);
 
 let currentRoute = "";
 function buildCharacterContext(character) {

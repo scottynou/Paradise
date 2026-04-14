@@ -14,76 +14,79 @@ window.PageInit["sequence"] = function () {
 
   const data = {
     S1: {
-      tag: "Lecture utile 1",
-      title: "S1 - Premier palier a completer",
+      tag: "Confort de rotation",
+      title: "S1 - Le palier qui sécurise le kit",
       lead:
-        "Description placeholder de la premiere sequence. Cette phrase doit etre remplacee par une analyse concrete du gain reel.",
+        "Chaque stack de Couronne des volontés donne aussi 15 % de DGT CRIT, l'Intro en ajoute une et toute la chaîne renforcée devient insensible aux interruptions.",
       bullets: [
-        "Premier point placeholder sur l'impact du palier.",
-        "Deuxieme point placeholder pour garder la densite de lecture.",
-        "Troisieme point placeholder si besoin d'un detail supplementaire.",
+        "Le gain de confort est énorme, car une interruption sur Strike / Leap / Plunge ne casse plus la rotation.",
+        "La stack gratuite via l'Intro rend l'ouverture plus stable et améliore tout de suite les dégâts du cycle.",
+        "C'est la séquence la plus agréable si tu veux simplement fiabiliser Augusta au quotidien.",
       ],
       note:
-        "Conclusion courte placeholder pour resumer a qui cette sequence profite vraiment.",
+        "Le meilleur premier palier à viser si tu la joues souvent.",
     },
     S2: {
-      tag: "Lecture utile 2",
-      title: "S2 - Renfort d'equipe",
+      tag: "Scaling critique",
+      title: "S2 - Le vrai boost de stats CRIT",
       lead:
-        "Placeholder d'analyse pour un second palier davantage centre sur l'equipe ou le confort global.",
+        "Couronne des volontés donne désormais 20 % de Taux CRIT par stack, puis l'excédent au-dessus de 100 % se convertit en DGT CRIT jusqu'à +100 %.",
       bullets: [
-        "Point placeholder a adapter selon le kit du personnage.",
-        "Second point placeholder avec un volume similaire au guide de reference.",
+        "Très fort si ton build approche déjà de bons seuils CRIT.",
+        "Ne change pas la rotation, mais augmente fortement son scaling sur tout le cycle.",
       ],
       note:
-        "Petit resume placeholder a personnaliser.",
+        "Une grosse séquence de chiffres, plus impressionnante sur un build déjà avancé.",
     },
     S3: {
-      tag: "Lecture utile 3",
-      title: "S3 - Rotation et rythme",
+      tag: "Spike DPS",
+      title: "S3 - Le gros palier de dégâts",
       lead:
-        "Texte generic de longueur moyenne prevu pour un palier de rotation, de generation ou de fluidite.",
+        "Backstep, Spinslash, Uppercut, Plunge, Sunborne et Everbright Protector gagnent tous 25 % de multiplicateur supplémentaire.",
       bullets: [
-        "Premier point placeholder.",
-        "Deuxieme point placeholder.",
+        "Cible directement les vraies sources de dégâts qui font la valeur d'Augusta.",
+        "Améliore autant son milieu de rotation que son énorme finisher.",
+        "Si tu cherches un vrai saut de DPS ressenti, c'est ici qu'il se trouve.",
       ],
       note:
-        "Note placeholder sur la sensation de jeu et la valeur reelle du palier.",
+        "Le palier de dégâts le plus marquant avant le luxe complet de S6.",
     },
     S4: {
-      tag: "Lecture utile 4",
-      title: "S4 - Sustain ou stabilite",
+      tag: "Buff d'équipe",
+      title: "S4 - +20 % ATQ pour tout le groupe",
       lead:
-        "Description generique a completer pour un palier orientee survie, confort ou maintien de ressources.",
+        "L'Intro donne désormais 20 % d'ATQ à toute l'équipe pendant 30 s. C'est simple, propre et toujours utile.",
       bullets: [
-        "Point placeholder sur la survie ou le maintien.",
-        "Point placeholder sur les situations ou cette sequence devient interessante.",
+        "Augmente un peu plus la valeur globale de l'équipe sans demander de changement de rotation.",
+        "Moins spectaculaire que S1 ou S3, mais jamais perdu.",
       ],
       note:
-        "Conclusion placeholder pour situer le palier dans un plan d'investissement.",
+        "Bonne séquence de transition, surtout si tu veux aussi renforcer ses teammates.",
     },
     S5: {
-      tag: "Lecture utile 5",
-      title: "S5 - Confort additionnel",
+      tag: "Palier mineur",
+      title: "S5 - Plus de bouclier, peu de sensation",
       lead:
-        "Explication placeholder de longueur moyenne pour une sequence de confort ou de specialisation.",
+        "Le bouclier de Faveur de la gloire gagne 50 % de valeur. Le gain existe, mais il ne change pas fondamentalement la manière de jouer Augusta.",
       bullets: [
-        "Premier point placeholder sur l'interet du palier.",
+        "Améliore un peu le confort brut et la fiabilité des activations liées aux boucliers.",
+        "Reste très loin derrière les vrais gros paliers offensifs du kit.",
       ],
       note:
-        "Resume placeholder a adapter librement.",
+        "Un palier correct, rarement un objectif à lui seul.",
     },
     S6: {
-      tag: "Lecture utile 6",
-      title: "S6 - Palier final offensif",
+      tag: "Plafond maximal",
+      title: "S6 - Le ceiling complet",
       lead:
-        "Derniere sequence placeholder. Utilisez cette zone pour presenter le pic de puissance, de burst ou de finition du personnage.",
+        "Le nombre maximum de Couronnes des volontés monte à 4, l'excédent de Taux CRIT au-dessus de 150 % se convertit encore en DGT CRIT, et Thunder Rage ajoute des dégâts Electro d'Attaque lourde supplémentaires.",
       bullets: [
-        "Premier point placeholder sur le gain offensif.",
-        "Deuxieme point placeholder sur la valeur en contenu avance.",
+        "Pousse son scaling critique au maximum.",
+        "Accélère encore l'empilement grâce aux charges supplémentaires générées par certaines lourdes.",
+        "Transforme complètement le haut de sa courbe de dégâts.",
       ],
       note:
-        "Conclusion placeholder sur le profil de joueur concerne par ce dernier investissement.",
+        "Séquence de luxe pour pousser Augusta à son plafond absolu.",
     },
   };
 

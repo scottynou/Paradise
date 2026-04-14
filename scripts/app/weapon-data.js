@@ -60,7 +60,10 @@
       filename: filename,
       englishName: normalizeText(rawWeapon && rawWeapon.englishName),
       frenchName: normalizeText(rawWeapon && rawWeapon.frenchName),
-      image: folder && filename ? "assets/img/armes/" + folder + "/" + filename : "",
+      image:
+        folder && filename
+          ? site.resolvePath("assets/img/armes/" + folder + "/" + filename)
+          : "",
     };
   }
 

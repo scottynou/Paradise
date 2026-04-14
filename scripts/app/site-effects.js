@@ -86,6 +86,7 @@
   initMutationBridge();
   initLinkWarming();
   initLinkActivationFeedback();
+  initWeaponCardLock();
   initHomeGuideWarmup();
   primeNode(document.body);
 
@@ -274,6 +275,43 @@
 
     window.addEventListener("pagehide", clearActiveLink);
     window.addEventListener("blur", clearActiveLink);
+  }
+
+  function initWeaponCardLock() {
+    document.addEventListener(
+      "click",
+      function (event) {
+        var weaponCard = event.target.closest(".weapon-card");
+
+        if (!weaponCard) {
+          return;
+        }
+
+        event.preventDefault();
+        event.stopPropagation();
+      },
+      true
+    );
+
+    document.addEventListener(
+      "keydown",
+      function (event) {
+        var weaponCard;
+
+        if (event.key !== "Enter" && event.key !== " ") {
+          return;
+        }
+
+        weaponCard = event.target.closest(".weapon-card");
+        if (!weaponCard) {
+          return;
+        }
+
+        event.preventDefault();
+        event.stopPropagation();
+      },
+      true
+    );
   }
 
   function scheduleIdle(task) {
@@ -473,24 +511,155 @@
 
     mutationObserver = new MutationObserver(function (records) {
       records.forEach(function (record) {
+        if (record.type === "attributes") {
+          refreshWeaponModalState();
+          return;
+        }
+
         Array.prototype.forEach.call(record.addedNodes, function (node) {
           if (node && node.nodeType === 1) {
             primeNode(node);
           }
         });
       });
+
+      refreshWeaponModalState();
     });
 
     mutationObserver.observe(document.body, {
+      attributes: true,
+      attributeFilter: ["aria-hidden"],
       childList: true,
       subtree: true,
     });
+
+    refreshWeaponModalState();
   }
 
   function primeNode(root) {
+    prepareWeaponCards(root);
     prepareFillNodes(root);
     prepareCountNodes(root);
+    prepareGuideHeroArt(root);
     prepareMediaNodes(root);
+  }
+
+  function getCurrentGuideSlug() {
+    var attrSlug;
+    var match;
+
+    if (!site) {
+      return "";
+    }
+
+    attrSlug = site.normalizeSlug(document.body.getAttribute("data-guide-slug") || "");
+    if (attrSlug) {
+      return attrSlug;
+    }
+
+    match = window.location.pathname.match(/\/pages\/guides\/([^/]+)\.html$/i);
+    return match ? site.normalizeSlug(match[1]) : "";
+  }
+
+  function prepareGuideHeroArt(root) {
+    var slug = getCurrentGuideSlug();
+    var config;
+
+    if (!site || typeof site.getGuideHeroArtConfig !== "function" || !slug) {
+      return;
+    }
+
+    config = site.getGuideHeroArtConfig(slug);
+    if (!config) {
+      return;
+    }
+
+    queryWithin(root, ".overview-hero__figure").forEach(function (figure) {
+      if (!figure.closest(".overview-hero__media--editorial")) {
+        return;
+      }
+
+      applyGuideHeroArt(figure, config, slug);
+    });
+  }
+
+  function applyGuideHeroArt(figure, config, slug) {
+    var image = figure.querySelector("img");
+    var badge = figure.querySelector(".overview-hero__empty-badge");
+    var label = getGuideDisplayName(slug);
+
+    figure.setAttribute("data-hero-art-mode", config.mode || "empty");
+    figure.setAttribute("data-hero-art-variant", config.variant || "default");
+    figure.style.setProperty("--guide-hero-position", config.desktopPosition || "50% 22%");
+    figure.style.setProperty("--guide-hero-scale", String(config.desktopScale || "1"));
+    figure.style.setProperty("--guide-hero-mobile-position", config.mobilePosition || config.desktopPosition || "50% 22%");
+    figure.style.setProperty("--guide-hero-mobile-scale", String(config.mobileScale || config.desktopScale || "1"));
+
+    if (config.mode === "image") {
+      figure.classList.remove("overview-hero__figure--empty");
+
+      if (!image) {
+        image = document.createElement("img");
+        figure.appendChild(image);
+      }
+
+      image.src = config.src;
+      image.alt = "Illustration de " + label;
+
+      if (badge) {
+        badge.remove();
+      }
+
+      return;
+    }
+
+    figure.classList.add("overview-hero__figure--empty");
+
+    if (image) {
+      image.remove();
+    }
+
+    if (!badge) {
+      badge = document.createElement("span");
+      badge.className = "overview-hero__empty-badge";
+      badge.textContent = "Splash a venir";
+      figure.appendChild(badge);
+    }
+  }
+
+  function getGuideDisplayName(slug) {
+    var brandName;
+
+    brandName = document.querySelector(".brand-copy strong");
+    if (brandName && brandName.textContent) {
+      return brandName.textContent.trim();
+    }
+
+    return String(slug || "").trim() || "ce personnage";
+  }
+
+  function refreshWeaponModalState() {
+    queryWithin(document.body, ".arme-modal").forEach(function (modal) {
+      if (modal.getAttribute("aria-hidden") !== "true") {
+        modal.setAttribute("aria-hidden", "true");
+      }
+    });
+
+    document.body.removeAttribute("data-weapon-modal-open");
+  }
+
+  function prepareWeaponCards(root) {
+    queryWithin(root, ".weapon-card").forEach(function (card) {
+      card.setAttribute("data-weapon-disabled", "true");
+      card.setAttribute("aria-disabled", "true");
+      card.tabIndex = -1;
+    });
+
+    queryWithin(root, ".arme-modal").forEach(function (modal) {
+      if (modal.getAttribute("aria-hidden") !== "true") {
+        modal.setAttribute("aria-hidden", "true");
+      }
+    });
   }
 
   function queryWithin(root, selector) {

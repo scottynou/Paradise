@@ -1,41 +1,42 @@
 :root {
-  --accent-primary: #808080;
-  --accent-secondary: #a0a0a0;
-  --accent-light: #c0c0c0;
-  --accent-dark: #606060;
-  --accent-glow: rgba(160, 160, 160, 0.18);
-  --surface-base: rgba(18, 18, 18, 0.82);
-  --surface-strong: rgba(12, 12, 12, 0.92);
-  --surface-soft: rgba(32, 32, 32, 0.64);
-  --text-main: #f4f4f4;
-  --text-soft: rgba(234, 234, 234, 0.84);
-  --text-muted: rgba(196, 196, 196, 0.68);
-  --sk-bg: #121212;
-  --sk-surface: rgba(18, 18, 18, 0.72);
-  --sk-surface-strong: rgba(12, 12, 12, 0.86);
-  --sk-card: rgba(32, 32, 32, 0.7);
-  --sk-card-soft: rgba(42, 42, 42, 0.52);
-  --sk-card-muted: rgba(28, 28, 28, 0.56);
-  --sk-border: rgba(160, 160, 160, 0.18);
-  --sk-border-strong: rgba(192, 192, 192, 0.3);
+  --accent-primary: #f2cd9f;
+  --accent-secondary: #d86b4d;
+  --accent-light: #fff2de;
+  --accent-dark: #331d19;
+  --accent-glow: rgba(242, 205, 159, 0.18);
+  --accent-gradient: linear-gradient(135deg, #fff2de 0%, #f2cd9f 48%, #d86b4d 100%);
+  --surface-base: rgba(22, 11, 10, 0.86);
+  --surface-strong: rgba(17, 8, 8, 0.94);
+  --surface-soft: rgba(53, 27, 23, 0.68);
+  --text-main: #fff7f0;
+  --text-soft: rgba(255, 238, 225, 0.86);
+  --text-muted: rgba(229, 195, 172, 0.72);
+  --sk-bg: #160b0a;
+  --sk-surface: rgba(34, 15, 13, 0.76);
+  --sk-surface-strong: rgba(22, 10, 9, 0.9);
+  --sk-card: rgba(56, 28, 23, 0.72);
+  --sk-card-soft: rgba(71, 37, 30, 0.52);
+  --sk-card-muted: rgba(40, 20, 17, 0.6);
+  --sk-border: rgba(242, 205, 159, 0.18);
+  --sk-border-strong: rgba(242, 205, 159, 0.3);
   --sk-text: var(--text-main);
   --sk-text-soft: var(--text-soft);
   --sk-text-muted: var(--text-muted);
   --sk-accent: var(--accent-primary);
   --sk-accent-strong: var(--accent-secondary);
   --sk-accent-deep: var(--accent-dark);
-  --sk-violet: #8c8c8c;
-  --sk-success: #a8a8a8;
-  --sk-danger: #bcbcbc;
-  --sk-shadow: 0 30px 72px rgba(0, 0, 0, 0.28);
+  --sk-violet: #8b4a45;
+  --sk-success: #f0b172;
+  --sk-danger: #d6705e;
+  --sk-shadow: 0 30px 72px rgba(0, 0, 0, 0.3);
   --sk-radius-xl: 32px;
   --sk-radius-lg: 24px;
   --sk-radius-md: 18px;
   --sk-radius-sm: 14px;
-  --sk-ui-card-border: rgba(255, 255, 255, 0.06);
-  --sk-ui-card-surface: rgba(20, 20, 20, 0.6);
-  --sk-ui-card-glow: 0 0 20px rgba(160, 160, 160, 0.08);
-  --sk-ui-title-glow: 0 0 30px rgba(192, 192, 192, 0.18);
+  --sk-ui-card-border: rgba(242, 205, 159, 0.08);
+  --sk-ui-card-surface: rgba(32, 16, 14, 0.62);
+  --sk-ui-card-glow: 0 0 20px rgba(242, 205, 159, 0.08);
+  --sk-ui-title-glow: 0 0 30px rgba(242, 205, 159, 0.16);
 }
 
 * {
@@ -3116,4 +3117,254 @@ body:not(.use-video-bg) {
 .site-video-bg--placeholder .site-video-bg__video,
 .site-video-bg:not(.site-video-bg--ready) .site-video-bg__video {
   display: none;
+}
+
+
+/* Augusta thematic overrides */
+body.theme-guide-augusta {
+  background:
+    radial-gradient(circle at 14% 10%, rgba(216, 107, 77, 0.14), rgba(216, 107, 77, 0) 32%),
+    radial-gradient(circle at 85% 16%, rgba(242, 205, 159, 0.1), rgba(242, 205, 159, 0) 28%),
+    linear-gradient(180deg, rgba(22, 11, 10, 0.98), rgba(26, 13, 11, 0.98));
+}
+
+body.theme-guide-augusta .topbar {
+  border-bottom-color: rgba(242, 205, 159, 0.12);
+  background:
+    linear-gradient(180deg, rgba(28, 13, 11, 0.92), rgba(28, 13, 11, 0.58)),
+    rgba(28, 13, 11, 0.56);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.16);
+}
+
+body.theme-guide-augusta .brand .logo {
+  background: radial-gradient(circle at 30% 30%, rgba(242, 205, 159, 0.18), rgba(242, 205, 159, 0));
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.18),
+    0 0 24px rgba(242, 205, 159, 0.12);
+}
+
+body.theme-guide-augusta .brand:hover .logo,
+body.theme-guide-augusta .brand:focus-visible .logo {
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.2),
+    0 0 28px rgba(242, 205, 159, 0.16);
+}
+
+body.theme-guide-augusta .navbar {
+  border-color: rgba(242, 205, 159, 0.12);
+  background: rgba(34, 16, 14, 0.54);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.03),
+    0 0 0 1px rgba(216, 107, 77, 0.05);
+}
+
+body.theme-guide-augusta .indicator {
+  background: linear-gradient(135deg, rgba(242, 205, 159, 0.22), rgba(216, 107, 77, 0.28));
+  border: 1px solid rgba(242, 205, 159, 0.16);
+}
+
+body.theme-guide-augusta .navbar a:hover,
+body.theme-guide-augusta .navbar a:focus-visible,
+body.theme-guide-augusta .navbar a[aria-current="page"] {
+  color: #fff8f2;
+}
+
+body.theme-guide-augusta .guide-panel,
+body.theme-guide-augusta .metric-card,
+body.theme-guide-augusta .pc-card,
+body.theme-guide-augusta .info-card,
+body.theme-guide-augusta .mainstat-card,
+body.theme-guide-augusta .substat-card,
+body.theme-guide-augusta .endgame-stat,
+body.theme-guide-augusta .sequence-details,
+body.theme-guide-augusta .weapon-card,
+body.theme-guide-augusta .echo-set {
+  border-color: rgba(242, 205, 159, 0.12);
+  background:
+    linear-gradient(150deg, rgba(41, 20, 18, 0.74), rgba(23, 11, 10, 0.5)),
+    rgba(25, 12, 10, 0.38);
+}
+
+body.theme-guide-augusta .guide-panel::before,
+body.theme-guide-augusta .metric-card::before,
+body.theme-guide-augusta .pc-card::before,
+body.theme-guide-augusta .echo-set::before,
+body.theme-guide-augusta .weapon-card::before,
+body.theme-guide-augusta .team-minimal-card::after {
+  background: linear-gradient(90deg, transparent, rgba(242, 205, 159, 0.18), transparent);
+}
+
+body.theme-guide-augusta .eyebrow,
+body.theme-guide-augusta .metric-label,
+body.theme-guide-augusta .team-slot__alt-label,
+body.theme-guide-augusta .team-card__footer-label,
+body.theme-guide-augusta .echo-choice-label,
+body.theme-guide-augusta .echo-item__label,
+body.theme-guide-augusta .endgame-stat__hint,
+body.theme-guide-augusta .sequence-tag {
+  color: rgba(242, 205, 159, 0.78);
+}
+
+body.theme-guide-augusta .priority-item--top,
+body.theme-guide-augusta .sequence-node.is-active,
+body.theme-guide-augusta .weapon-card--top,
+body.theme-guide-augusta .tier-showcase__badge {
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(242, 205, 159, 0.08),
+    0 0 24px rgba(216, 107, 77, 0.08);
+}
+
+body.theme-guide-augusta .sequence-node.is-active,
+body.theme-guide-augusta .tier-showcase__badge,
+body.theme-guide-augusta .weapon-progress__fill,
+body.theme-guide-augusta .weapon-progress__overflow,
+body.theme-guide-augusta .priority-rank,
+body.theme-guide-augusta .indicator {
+  background-image: linear-gradient(135deg, #f2cd9f, #d86b4d);
+}
+
+body.theme-guide-augusta .weapon-progress__track {
+  background: rgba(242, 205, 159, 0.08);
+}
+
+body.theme-guide-augusta .weapon-progress__fill {
+  box-shadow: 0 0 18px rgba(216, 107, 77, 0.18);
+}
+
+body.theme-guide-augusta .weapon-progress__overflow {
+  opacity: 0.32;
+}
+
+body.theme-guide-augusta .team-minimal-card {
+  border-color: rgba(242, 205, 159, 0.12);
+  background:
+    linear-gradient(150deg, rgba(44, 22, 18, 0.74), rgba(24, 12, 10, 0.5)),
+    rgba(25, 12, 10, 0.38);
+}
+
+body.theme-guide-augusta .team-minimal-card:hover {
+  border-color: rgba(242, 205, 159, 0.22);
+  box-shadow:
+    0 24px 46px rgba(0, 0, 0, 0.2),
+    0 0 24px rgba(216, 107, 77, 0.08);
+}
+
+body.theme-guide-augusta .team-minimal-slot__portrait,
+body.theme-guide-augusta .team-minimal-slot__alt,
+body.theme-guide-augusta .team-slot__portrait-shell,
+body.theme-guide-augusta .team-alt-card__portrait {
+  border-color: rgba(242, 205, 159, 0.18);
+  box-shadow: 0 0 0 1px rgba(216, 107, 77, 0.06);
+}
+
+body.theme-guide-augusta .tier-showcase__badge {
+  color: #2b130f;
+}
+
+.priority-overview {
+  border-radius: 24px;
+}
+
+.priority-overview__lead,
+.priority-overview__hint {
+  margin: 0;
+}
+
+.priority-overview__lead {
+  color: var(--sk-text);
+  line-height: 1.65;
+}
+
+.priority-overview__hint {
+  color: var(--sk-text-soft);
+  font-size: 0.92rem;
+}
+
+.priority-flow__text {
+  display: grid;
+  gap: 2px;
+}
+
+.priority-flow__text strong {
+  display: block;
+  font-size: 0.92rem;
+}
+
+.priority-list {
+  counter-reset: priority-step;
+  gap: 34px;
+}
+
+.priority-item {
+  counter-increment: priority-step;
+  overflow: visible;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+}
+
+.priority-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 31px;
+  bottom: -22px;
+  width: 2px;
+  height: 16px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.08));
+  pointer-events: none;
+}
+
+.priority-item:not(:last-child)::after {
+  left: 26px;
+  bottom: -24px;
+  transform: rotate(45deg);
+}
+
+.priority-item--top {
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.03),
+    0 18px 40px rgba(0, 0, 0, 0.18);
+}
+
+.priority-rank {
+  position: relative;
+  overflow: visible;
+}
+
+.priority-copy {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+}
+
+.priority-copy h3 {
+  margin: 0;
+}
+
+.priority-copy p {
+  line-height: 1.68;
+}
+
+@media (max-width: 720px) {
+  .priority-overview {
+    padding: 18px;
+  }
+
+  .priority-list {
+    gap: 28px;
+  }
+
+  .priority-item {
+    padding: 18px;
+  }
+
+  .priority-item:not(:last-child)::before {
+    left: 27px;
+  }
+
+  .priority-item:not(:last-child)::after {
+    left: 22px;
+  }
+
 }

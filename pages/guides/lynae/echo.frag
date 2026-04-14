@@ -77,10 +77,52 @@
     </div>
 
     <section class="echo-mainstats">
+      <div class="echo-mainstats__header">
+        <span class="echo-mainstats__kicker">Meilleures stats d'&Eacute;cho</span>
+        <h3>Configuration 4 / 3 / 3 / 1 / 1</h3>
+        <p>
+          Commence par fixer les stats principales. Les substats viennent ensuite pour affiner le build.
+        </p>
+      </div>
+      <div class="echo-mainstats__grid">
+        <article class="mainstat-card">
+          <span class="mainstat-card__slot">4 co&ucirc;t</span>
+          <div class="mainstat-card__stats">
+            <span class="mainstat-primary">[Main stat 4 co&ucirc;t]</span>
+            <span class="mainstat-sep">&gt;</span>
+            <span class="mainstat-alt">[Alternative]</span>
+          </div>
+        </article>
+        <article class="mainstat-card mainstat-card--priority">
+          <span class="mainstat-card__slot">3 co&ucirc;t</span>
+          <div class="mainstat-card__stats">
+            <span class="mainstat-primary">[Main stat 3 co&ucirc;t]</span>
+          </div>
+        </article>
+        <article class="mainstat-card mainstat-card--priority">
+          <span class="mainstat-card__slot">3 co&ucirc;t</span>
+          <div class="mainstat-card__stats">
+            <span class="mainstat-primary">[Main stat 3 co&ucirc;t]</span>
+            <span class="mainstat-sep">&gt;</span>
+            <span class="mainstat-alt">[Alternative]</span>
+          </div>
+        </article>
+        <article class="mainstat-card">
+          <span class="mainstat-card__slot">1 co&ucirc;t</span>
+          <div class="mainstat-card__stats">
+            <span class="mainstat-primary">[Main stat 1 co&ucirc;t]</span>
+          </div>
+        </article>
+        <article class="mainstat-card">
+          <span class="mainstat-card__slot">1 co&ucirc;t</span>
+          <div class="mainstat-card__stats">
+            <span class="mainstat-primary">[Main stat 1 co&ucirc;t]</span>
+          </div>
+        </article>
+      </div>
       <div class="echo-substats-divider">
         <span>Substats prioritaires</span>
       </div>
-
       <div class="substats-grid substats-grid--single">
         <article class="substat-card">
           <h4>Ordre recommande</h4>

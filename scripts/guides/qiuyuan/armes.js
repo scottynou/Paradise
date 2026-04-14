@@ -5,57 +5,85 @@ window.PageInit["armes"] = function () {
   const modal = document.getElementById("armeModal");
   const modalImg = document.getElementById("armeModalImg");
   const modalCaption = document.getElementById("armeModalCaption");
-  const placeholderImage = "../../assets/img/placeholders/guide-template/weapon-art.svg";
+  const weaponData = window.ParadiseWeaponData;
 
   if (!grid || !modal || !modalImg || !modalCaption) {
     return;
   }
 
-  const formatPercent = (value) => Number(value).toFixed(2).replace(".", ",") + "%";
+  const formatPercent = (value) =>
+    Number(value).toFixed(2).replace(".", ",") + "%";
 
   const weapons = [
     {
-      stableId: "template-weapon-1",
-      displayName: "[Arme 1]",
-      label: "Meilleur choix",
+      filename: "5star_Emerald_Sentence.png",
+      label: "Signature",
       percent: 100.0,
-      image: placeholderImage,
       note:
-        "Description placeholder de l'arme principale. Detaillez ici l'effet, la logique de build et la place dans la rotation.",
+        "Sa meilleure option brute : Taux CRIT, ATQ, DGT d'Attaque lourde et un buff d'Écho pour toute l'équipe. Le gain est réel, mais pas indispensable.",
     },
     {
-      stableId: "template-weapon-2",
-      displayName: "[Arme 2]",
-      label: "Alternative recommandee",
-      percent: 92.4,
-      image: placeholderImage,
+      filename: "5star_Red_Spring.png",
+      label: "Alternative 5★",
+      percent: 85.2,
       note:
-        "Alternative generique a completer. Ce texte sert a occuper le meme espace visuel que le guide de reference.",
+        "Gros stat-stick Taux CRIT / ATQ. Qiuyuan n'exploite presque pas la partie centrée sur les attaques normales, mais les stats pures suffisent à la garder très haut.",
     },
     {
-      stableId: "template-weapon-3",
-      displayName: "[Arme 3]",
-      label: "Transition",
-      percent: 84.8,
-      image: placeholderImage,
+      filename: "5star_Blazing_Brilliance.png",
+      label: "Alternative 5★",
+      percent: 84.4,
       note:
-        "Option de transition placeholder a adapter pour un profil plus accessible ou plus specialise.",
+        "Très bonne arme de stats pures grâce au DGT CRIT. Le passif orienté Skill sert peu ici, mais le socle 5★ reste excellent.",
     },
     {
-      stableId: "template-weapon-4",
-      displayName: "[Arme 4]",
-      label: "Alternative utilitaire",
-      percent: 79.6,
-      image: placeholderImage,
+      filename: "5star_Emerald_of_Genesis.png",
+      label: "5★ permanente",
+      percent: 84.1,
       note:
-        "Derniere option placeholder. Remplacez ce texte par une analyse courte et concrete pour le personnage cible.",
+        "De loin sa meilleure 5★ toujours disponible. Recharge, Taux CRIT et ATQ collent parfaitement à son build pour une perte très faible face au top.",
+    },
+    {
+      filename: "4star_Feather_Edge.png",
+      label: "Battle Pass",
+      percent: 80.1,
+      note:
+        "La meilleure 4★ offensive. La base ATQ reste inférieure à une 5★, mais elle apporte assez de stats pour rester très compétitive.",
+    },
+    {
+      filename: "4star_Commando_of_Conviction.png",
+      label: "4★ solide",
+      percent: 74.1,
+      note:
+        "Beaucoup d'ATQ sur toute la rotation grâce au passif d'Intro. Simple, stable et totalement jouable si tu manques d'options premium.",
+    },
+    {
+      filename: "5star_Bloodpacts_Pledge.png",
+      label: "Meilleure gratuite",
+      percent: 72.8,
+      note:
+        "Un pur stat-stick ATQ + Recharge. Qiuyuan n'utilise pas vraiment son passif, mais la base 5★ en fait malgré tout son meilleur choix gratuit.",
     },
   ];
+
+  function getWeaponViewModel(weapon) {
+    if (weaponData && typeof weaponData.decorateWeapon === "function") {
+      return weaponData.decorateWeapon(weapon);
+    }
+
+    return Object.assign({}, weapon, {
+      stableId: String((weapon && (weapon.filename || weapon.englishName)) || "").trim(),
+      displayName: String((weapon && (weapon.displayName || weapon.englishName)) || "").trim(),
+    });
+  }
 
   function renderWeapons() {
     grid.innerHTML = "";
 
-    weapons.forEach((entry, index) => {
+    weapons.forEach((weapon, index) => {
+      const entry = getWeaponViewModel(weapon);
+      const weaponName = entry.displayName || entry.englishName || "";
+      const stableId = entry.stableId || "";
       const article = document.createElement("article");
       const basePercent = Math.min(entry.percent, 100);
       const overflowPercent = Math.max(entry.percent - 100, 0);
@@ -63,25 +91,32 @@ window.PageInit["armes"] = function () {
 
       article.className = "weapon-card" + (index === 0 ? " weapon-card--top" : "");
       article.tabIndex = 0;
-      article.dataset.weaponId = entry.stableId;
+
+      if (stableId) {
+        article.dataset.weaponId = stableId;
+      }
+
+      if (entry.rarity >= 3 && entry.rarity <= 5) {
+        article.dataset.weaponRarity = String(entry.rarity);
+      }
 
       article.innerHTML = [
         '<div class="weapon-card__media">',
-        '  <img src="' + entry.image + '" alt="' + entry.displayName + '" loading="lazy" decoding="async" />',
+        '  <img src="' + entry.image + '" alt="' + weaponName + '" loading="lazy" decoding="async" />',
         "</div>",
         '<div class="weapon-card__body">',
         '  <div class="weapon-topline">',
         '    <div>',
-        '      <p class="weapon-context">' + entry.label + "</p>",
-        '      <h3>' + entry.displayName + "</h3>",
-        '      <p class="weapon-note">' + entry.note + "</p>",
-        "    </div>",
+        '      <p class="weapon-context">' + entry.label + '</p>',
+        '      <h3>' + weaponName + '</h3>',
+        '      <p class="weapon-note">' + entry.note + '</p>',
+        '    </div>',
         '    <div class="weapon-percent-block" aria-label="Pourcentage relatif ' +
           formatPercent(entry.percent) +
           '">',
-        "      <strong>" + formatPercent(entry.percent) + "</strong>",
-        "    </div>",
-        "  </div>",
+        '      <strong>' + formatPercent(entry.percent) + '</strong>',
+        '    </div>',
+        '  </div>',
         '  <div class="weapon-progress" aria-label="Pourcentage relatif ' +
           formatPercent(entry.percent) +
           '">',
@@ -90,9 +125,9 @@ window.PageInit["armes"] = function () {
         overflowPercent > 0
           ? '      <span class="weapon-progress__overflow is-visible" style="width:' + overlayPercent.toFixed(2) + '%;"></span>'
           : "",
-        "    </div>",
-        "  </div>",
-        "</div>",
+        '    </div>',
+        '  </div>',
+        '</div>',
       ].join("");
 
       article.addEventListener("click", () => openModal(entry));
@@ -126,5 +161,12 @@ window.PageInit["armes"] = function () {
     }
   });
 
-  renderWeapons();
+  const loadWeapons =
+    weaponData && typeof weaponData.load === "function"
+      ? weaponData.load().catch((error) => {
+          console.warn("[Qiuyuan] weapon registry failed", error);
+        })
+      : Promise.resolve();
+
+  loadWeapons.then(renderWeapons);
 };

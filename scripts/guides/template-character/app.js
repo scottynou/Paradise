@@ -118,7 +118,7 @@ function buildCharacterContext(character) {
       },
     ],
     verdict: "",
-    art: PLACEHOLDER + "/character-art.svg",
+    art: site.getGuideSplashArtPath(slug) || PLACEHOLDER + "/character-art.svg",
   };
 }
 
@@ -240,7 +240,7 @@ function buildHeroMarkup() {
     '      <div class="overview-hero__figure">',
     '        <div class="overview-hero__figure-shell" aria-hidden="true"></div>',
     '        <div class="overview-hero__figure-mist" aria-hidden="true"></div>',
-    '        <img src="' + CHARACTER.art + '" alt="Illustration placeholder du personnage" />',
+    '        <img src="' + CHARACTER.art + '" alt="Illustration de ' + CHARACTER.name + '" />',
     "      </div>",
     "    </div>",
     "  </div>",
@@ -287,7 +287,7 @@ async function fetchPage(route) {
   }
 
   const inlinePages = window.TemplateCharacterPages || null;
-  if (route !== "stat-endgame" && route !== "resume" && inlinePages && typeof inlinePages[route] === "string") {
+  if (route !== "echo" && route !== "stat-endgame" && route !== "resume" && inlinePages && typeof inlinePages[route] === "string") {
     const inlineHTML = cleanFragmentHTML(personalizeMarkup(inlinePages[route]), route);
     pageCache.set(route, inlineHTML);
     return inlineHTML;
